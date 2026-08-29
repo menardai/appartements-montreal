@@ -72,7 +72,7 @@ const state = {
   allListings: /** @type {Listing[]} */([]),
   neighborhoodActive: new Set(),
   sourceActive: new Set(['kijiji', 'marketplace']),
-  sort: 'price-asc',
+  sort: 'price-desc',
   map: {
     map: null,
     layer: null,
@@ -275,6 +275,12 @@ function render() {
   const groups = groupByNeighborhood(filtered);
   // Order neighborhoods according to PRIMARY + SECONDARY + alphabetical fallback
   const order = [...PRIMARY_NEIGHBORHOODS, ...SECONDARY_AREAS];
+  // Sort within each neighborhood group: default price high→low unless user picked price-asc
+  const withinSort = (state.sort === 'price-asc' || state.sort === 'price-desc') ? state.sort : 'price-desc';
+  const dir = withinSort === 'price-asc' ? 1 : -1;
+  for (const k of Object.keys(groups)) {
+    groups[k].sort((a, b) => (a.price - b.price) * dir);
+  }
   const sortedKeys = Object.keys(groups).sort((a, b) => {
     const ia = order.indexOf(a);
     const ib = order.indexOf(b);
@@ -359,7 +365,7 @@ function renderCard(l) {
   meta.innerHTML = `
     <span>${escapeHtml(l.neighborhood || '—')}</span>
     <span>${l.bedrooms ?? '—'} ch · ${l.bathrooms ?? '—'} sdb</span>
-    ${l.sqft ? `<span>${l.sqft} pi²</span>` : ''}
+    <span>${formatSqft(l.sqft)}</span>
     ${l.bright ? `<span class="badge" title="Lumineux confirmé">Lumineux</span>` : ''}
     ${l.basement ? `<span class="badge" title="Sous-sol">Sous-sol</span>` : ''}
     <span class="badge">${sourceLabel(l.source)}</span>
@@ -407,7 +413,7 @@ function openModal(l) {
     formatPrice(l.price),
     l.neighborhood || null,
     `${l.bedrooms ?? '—'} ch · ${l.bathrooms ?? '—'} sdb`,
-    l.sqft ? `${l.sqft} pi²` : null,
+    formatSqft(l.sqft),
     l.posted ? `Publié: ${formatDate(l.posted)}` : null,
     l.bright ? 'Lumineux' : null,
     l.basement ? 'Sous-sol' : null,
@@ -525,6 +531,12 @@ function sourceLabel(src) {
   if (s.includes('kijiji')) return 'Kijiji';
   if (s.includes('marketplace') || s.includes('facebook')) return 'Marketplace';
   return src || 'Source';
+}
+function formatSqft(n) {
+  if (typeof n === 'number' && Number.isFinite(n) && n > 0) {
+    return `${n} pi²`;
+  }
+  return 'Superficie non indiquée';
 }
 function buildApplianceBadges(ap) {
   if (!ap) return '';
