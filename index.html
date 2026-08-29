@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>4½ à Montréal — Appartements lumineux (2000–2500 $)</title>
+    <meta name="description" content="Sélection d'appartements 4½ à Montréal pour deux professionnels de 26 ans. Budget 2000–2500 $, quartiers prisés, rénovés et lumineux. Kijiji & Facebook Marketplace." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS (OSM) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-hero">
+      <div class="container">
+        <h1>Appartements 4½ à Montréal</h1>
+        <p class="subtitle">
+          Deux professionnels, 26 ans, télétravail, centre-ville.
+        </p>
+        <p class="criteria">
+          <span class="chip">Budget: 2000–2500 $ / mois</span>
+          <span class="chip">Type: 4½ (2 chambres fermées)</span>
+          <span class="chip">Lumineux, rénové, pas de sous‑sol</span>
+          <span class="chip">Électros inclus: cuisinière, frigo, laveuse‑sécheuse</span>
+          <span class="chip">Sources: Kijiji, Facebook Marketplace</span>
+        </p>
+        <p class="count"><strong><span id="listingCount">0</span></strong> annonces correspondant aux critères</p>
+      </div>
+    </header>
+
+    <div class="controls-bar" role="region" aria-label="Filtres et tri">
+      <div class="container controls">
+        <div class="filters">
+          <div class="filter-group">
+            <span class="filter-label">Quartiers:</span>
+            <div class="chips" id="neighborhoodChips" aria-label="Filtres par quartier"></div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Source:</span>
+            <label class="chip chip-toggle"><input type="checkbox" id="srcKijiji" checked> Kijiji</label>
+            <label class="chip chip-toggle"><input type="checkbox" id="srcMarketplace" checked> Marketplace</label>
+          </div>
+          <div class="filter-group">
+            <label for="sqftSelect" class="filter-label">Superficie:</label>
+            <select id="sqftSelect" class="select" aria-label="Filtrer par superficie">
+              <option value="all" selected>Tous</option>
+              <option value="800">800+ pi²</option>
+              <option value="1000">1000+ pi²</option>
+            </select>
+          </div>
+        </div>
+        <div class="sort">
+          <label for="sortSelect" class="filter-label">Trier:</label>
+          <select id="sortSelect" class="select">
+            <option value="price-asc">Prix ↑</option>
+            <option value="price-desc" selected>Prix ↓</option>
+            <option value="neighborhood-asc">Quartier A→Z</option>
+            <option value="neighborhood-desc">Quartier Z→A</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <main id="contenu" class="container">
+      <div class="content-grid">
+        <aside class="map-panel" aria-label="Carte de Montréal">
+          <div id="map" class="map" role="region" aria-label="Carte des annonces"></div>
+          <p class="map-help">Carte interactive — OpenStreetMap. Cliquez un repère pour surligner la carte et l’annonce.</p>
+        </aside>
+        <div class="list-panel">
+          <section id="emptyState" class="empty" hidden>
+            <h2>Aucune annonce pour l’instant</h2>
+            <p>
+              Lorsque des annonces réelles seront ajoutées à <code>listings.json</code>, elles apparaîtront ici. Nous ne fabriquons pas de fausses annonces.
+            </p>
+            <ul class="criteria-list">
+              <li>Budget: 2000–2500 $ / mois</li>
+              <li>Type: 4½ (au moins 2 chambres fermées ou bureau à domicile)</li>
+              <li>Quartiers: Plateau, Rosemont, Petite‑Patrie, Verdun, Ahuntsic, Ville‑Marie (centre‑ville), et environs (Mile End, Saint‑Henri, Griffintown)</li>
+              <li>Lumineux, rénové, pas de sous‑sol</li>
+              <li>Sources: Kijiji et Facebook Marketplace</li>
+            </ul>
+          </section>
+
+          <section id="listingsByNeighborhood" class="neighborhood-groups" aria-live="polite"></section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Dernière mise à jour: <span id="lastUpdated"></span></p>
+        <p class="disclaimer">Les annonces sont des instantanés; elles peuvent être déjà louées ou modifiées. Consultez toujours l’annonce originale.</p>
+      </div>
+    </footer>
+
+    <!-- Modal de détail -->
+    <div id="detailModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-content" role="document">
+        <button class="modal-close" aria-label="Fermer" data-close-modal>&times;</button>
+        <h2 id="modalTitle"></h2>
+        <div id="modalMeta" class="modal-meta"></div>
+        <div class="carousel" aria-label="Galerie de photos" tabindex="0">
+          <button class="carousel-nav prev" aria-label="Photo précédente">&#10094;</button>
+          <div class="carousel-track" id="carouselTrack"></div>
+          <button class="carousel-nav next" aria-label="Photo suivante">&#10095;</button>
+        </div>
+        <div id="modalDescription" class="modal-description"></div>
+        <p><a id="modalExternalLink" class="external-link" href="#" target="_blank" rel="noopener noreferrer">Voir l’annonce originale</a></p>
+      </div>
+    </div>
+
+    <!-- Leaflet JS (OSM) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
