@@ -313,10 +313,15 @@ function filterAndSort(listings) {
     filtered = filtered.filter((l) => typeof l.sqft === 'number' && l.sqft >= 1000);
   }
 
-  // Sort: default is stars (3 on top, unrated at the bottom), then price
+  // Sort: unrated first, then 3★, 2★, 1★; price as tiebreaker
   const sort = state.sort;
+  const starRank = (l) => {
+    const r = getRating(l);
+    if (!r) return 0;      // pas noté → tout en haut
+    return 4 - r;          // 3★ → 1, 2★ → 2, 1★ → 3
+  };
   const starThenPrice = (a, b) => {
-    const ds = getRating(b) - getRating(a);
+    const ds = starRank(a) - starRank(b);
     if (ds) return ds;
     return (b.price || 0) - (a.price || 0);
   };
