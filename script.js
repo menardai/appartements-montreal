@@ -54,6 +54,7 @@ const els = {
   lastUpdated: document.getElementById('lastUpdated'),
   chipsContainer: document.getElementById('neighborhoodChips'),
   sortSelect: document.getElementById('sortSelect'),
+  sqftSelect: document.getElementById('sqftSelect'),
   srcKijiji: document.getElementById('srcKijiji'),
   srcMarketplace: document.getElementById('srcMarketplace'),
   empty: document.getElementById('emptyState'),
@@ -73,6 +74,7 @@ const state = {
   neighborhoodActive: new Set(),
   sourceActive: new Set(['kijiji', 'marketplace']),
   sort: 'price-desc',
+  sqftFilter: 'all', // 'all' | '800' | '1000'
   map: {
     map: null,
     layer: null,
@@ -178,6 +180,12 @@ function wireControls() {
     state.sort = els.sortSelect.value;
     render();
   });
+  if (els.sqftSelect) {
+    els.sqftSelect.addEventListener('change', () => {
+      state.sqftFilter = els.sqftSelect.value || 'all';
+      render();
+    });
+  }
   els.srcKijiji.addEventListener('change', () => {
     toggleSource('kijiji', els.srcKijiji.checked);
   });
@@ -234,6 +242,13 @@ function filterAndSort(listings) {
   // Filter by neighborhoods if any active; if none active -> show all
   if (state.neighborhoodActive.size > 0) {
     filtered = filtered.filter((l) => state.neighborhoodActive.has(l.neighborhood));
+  }
+
+  // Filter by superficie (sqft)
+  if (state.sqftFilter === '800') {
+    filtered = filtered.filter((l) => typeof l.sqft === 'number' && l.sqft >= 800);
+  } else if (state.sqftFilter === '1000') {
+    filtered = filtered.filter((l) => typeof l.sqft === 'number' && l.sqft >= 1000);
   }
 
   // Sort
