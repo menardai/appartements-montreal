@@ -490,3 +490,32 @@ code {
   object-fit: cover;
   display: block;
 }
+
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+.stars {
+  display: inline-flex;
+  gap: 0.12rem;
+  flex-shrink: 0;
+}
+.star {
+  border: 0;
+  background: transparent;
+  padding: 0 0.05rem;
+  font-size: 1.45rem;
+  line-height: 1;
+  color: #c8b8a4;
+  cursor: pointer;
+}
+.star.is-on {
+  color: #e0a100;
+}
+.star:hover { color: #e0a100; filter: brightness(1.05); }
+.star:focus-visible {
+  outline: 2px solid var(--accent);
+  border-radius: 4px;
+}
