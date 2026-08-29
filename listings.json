@@ -21,7 +21,8 @@
     "photos": [
       "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/20/203cb3b5-5491-4c4e-b020-ba34fe0676a1?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/7c/7cc27885-da8e-4219-99ab-ca7c6dfef0b1?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/cc/cc594e32-de0c-41e7-821c-8f493a679abb?rule=kijijica-640-webp"
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/cc/cc594e32-de0c-41e7-821c-8f493a679abb?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/18/1870885f-d1cd-4a4c-96b6-24212cb32a69?rule=kijijica-640-webp"
     ],
     "posted": "2026-08-14",
     "appliances": {
@@ -30,7 +31,12 @@
       "washer": true,
       "dryer": true,
       "notes": "Five new électros: frigo, poêle/stove, dishwasher, washer, dryer."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/20/203cb3b5-5491-4c4e-b020-ba34fe0676a1?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/7c/7cc27885-da8e-4219-99ab-ca7c6dfef0b1?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/cc/cc594e32-de0c-41e7-821c-8f493a679abb?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "kijiji-1742294906",
@@ -64,7 +70,13 @@
       "washer": true,
       "dryer": true,
       "notes": "7 appliances included: dishwasher, stove, fridge, washer-dryer, microwave, window A/C."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/a8/a8c70c9d-0dfd-42b6-b625-a288897c3756?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/d3/d3372d1d-399f-49c2-9665-201f930812c3?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/be/be8509a4-535e-4f0f-b2d5-9c138cf8d812?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/0e/0e2afc38-d6d8-4dfa-9d3e-706a2bc19b2b?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "kijiji-1741658822",
@@ -98,7 +110,13 @@
       "washer": true,
       "dryer": true,
       "notes": "Fridge, cuisinière, dishwasher, wall heat-pump/A/C, washer and dryer in-unit."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/bc/bc28b579-9ea6-4ee1-9025-cad6e36b25bd?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/3b/3b47c538-d2be-4f36-a6a5-93bda25db6a6?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/29/29592371-8d2c-4487-aa10-5704286481a7?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/35/35863424-b95c-461e-8973-60b9f6f312ad?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "kijiji-1742677129",
@@ -122,7 +140,8 @@
     "photos": [
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/bd/bd0c1bd0-545f-4684-9a75-fe3b1ea8c168?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/54/5410817e-3010-4844-95fb-ea3676d2b67a?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/a9/a98370d4-8b3f-4270-89cc-eadfedf0f533?rule=kijijica-640-webp"
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/a9/a98370d4-8b3f-4270-89cc-eadfedf0f533?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/51/516b6433-ed5f-48f7-8de6-ba1e1fea0ba6?rule=kijijica-640-webp"
     ],
     "posted": "2026-08-28",
     "appliances": {
@@ -131,7 +150,12 @@
       "washer": true,
       "dryer": true,
       "notes": "In-unit: fridge, cuisinière, dishwasher, microwave, washer, dryer."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/bd/bd0c1bd0-545f-4684-9a75-fe3b1ea8c168?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/54/5410817e-3010-4844-95fb-ea3676d2b67a?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/a9/a98370d4-8b3f-4270-89cc-eadfedf0f533?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "marketplace-1716776642849760",
@@ -164,7 +188,13 @@
       "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/741324121_1372608658125349_2632750657347014481_n.jpg",
       "https://scontent-dfw6-1.xx.fbcdn.net/v/t45.5328-4/739264341_1027458942992710_7775462971650171946_n.jpg"
     ],
-    "posted": "il y a plus d’une semaine"
+    "posted": "il y a plus d’une semaine",
+    "photos_featured": [
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t45.5328-4/740787865_1044018731457007_6661381328681646047_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t45.5328-4/739794662_2105470806983349_3274562430449882749_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/741324121_1372608658125349_2632750657347014481_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t45.5328-4/739264341_1027458942992710_7775462971650171946_n.jpg"
+    ]
   },
   {
     "id": "kijiji-1740847537",
@@ -188,7 +218,8 @@
     "photos": [
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ee/ee7ef787-ac9f-461e-9fe0-fbc96d4ff850?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/b8/b8e63fe6-bdc6-4be8-87b0-0dcc384f974e?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c9/c93b63c3-7987-4e21-8051-79ae2844a95e?rule=kijijica-640-webp"
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c9/c93b63c3-7987-4e21-8051-79ae2844a95e?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/9a/9a3ddba5-809b-4300-8db6-bfdc0e6d323b?rule=kijijica-640-webp"
     ],
     "posted": "2026-07-20",
     "appliances": {
@@ -197,7 +228,12 @@
       "washer": true,
       "dryer": true,
       "notes": "In-unit: réfrigérateur, cuisinière, micro-ondes, lave-vaisselle, laveuse, sécheuse."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ee/ee7ef787-ac9f-461e-9fe0-fbc96d4ff850?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/b8/b8e63fe6-bdc6-4be8-87b0-0dcc384f974e?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c9/c93b63c3-7987-4e21-8051-79ae2844a95e?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "marketplace-27141923258751240",
@@ -230,7 +266,13 @@
       "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.30808-6/714699735_122282426318062002_1301067413175861690_n.jpg",
       "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/714611807_122282426228062002_164420940711200983_n.jpg"
     ],
-    "posted": "il y a plus d’une semaine"
+    "posted": "il y a plus d’une semaine",
+    "photos_featured": [
+      "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/740197161_122285554148062002_7081138977831354029_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/714722841_122282426486062002_2354384167131350183_n.jpg",
+      "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.30808-6/714699735_122282426318062002_1301067413175861690_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/714611807_122282426228062002_164420940711200983_n.jpg"
+    ]
   },
   {
     "id": "kijiji-1740915606",
@@ -254,7 +296,8 @@
     "photos": [
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6a/6a80881b-c819-4bdb-8f24-fa8f01cd5d3e?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6a/6a7caa68-6ff7-462b-9086-ed9957479372?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/68/680fe47c-98d8-40e5-a517-a3eea9ae259c?rule=kijijica-640-webp"
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/68/680fe47c-98d8-40e5-a517-a3eea9ae259c?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/0c/0c01e740-1e2c-4701-923b-995bd3e21f8f?rule=kijijica-640-webp"
     ],
     "posted": "2026-07-21",
     "appliances": {
@@ -263,7 +306,12 @@
       "washer": true,
       "dryer": true,
       "notes": "In-unit: réfrigérateur, cuisinière, lave-vaisselle, laveuse, sécheuse + clim."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6a/6a80881b-c819-4bdb-8f24-fa8f01cd5d3e?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6a/6a7caa68-6ff7-462b-9086-ed9957479372?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/68/680fe47c-98d8-40e5-a517-a3eea9ae259c?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "kijiji-1740921142",
@@ -287,7 +335,8 @@
     "photos": [
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/d8/d80a2456-033c-45d7-8b17-d8ed90e2c2d7?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/77/77f1afb6-e574-430c-9046-f21c1452bcec?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/e5/e537b4f1-ffaa-4427-bb3f-4616f6907394?rule=kijijica-640-webp"
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/e5/e537b4f1-ffaa-4427-bb3f-4616f6907394?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ab/ab54ca33-e2e5-4de6-b644-1c108a76704c?rule=kijijica-640-webp"
     ],
     "posted": "2026-07-21",
     "appliances": {
@@ -296,7 +345,12 @@
       "washer": true,
       "dryer": true,
       "notes": "Furnished including dishwasher, washer, dryer, fridge, stove."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/d8/d80a2456-033c-45d7-8b17-d8ed90e2c2d7?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/77/77f1afb6-e574-430c-9046-f21c1452bcec?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/e5/e537b4f1-ffaa-4427-bb3f-4616f6907394?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "kijiji-1742463773",
@@ -320,7 +374,8 @@
     "photos": [
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/1c/1cf29f0b-9835-4a3b-9c9c-c05ea2bf73c7?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/e5/e518be37-c7ad-4a4a-a112-0d59020c4686?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/8c/8ced595f-2d83-478c-9f0d-db9a52ee9e35?rule=kijijica-640-webp"
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/8c/8ced595f-2d83-478c-9f0d-db9a52ee9e35?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/af/af287c0e-96b9-44da-9614-8e35f81edbe4?rule=kijijica-640-webp"
     ],
     "posted": "2026-08-23",
     "appliances": {
@@ -329,7 +384,12 @@
       "washer": true,
       "dryer": true,
       "notes": "Fridge, stove, washer, dryer, dishwasher, A/C all included (in-unit)."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/1c/1cf29f0b-9835-4a3b-9c9c-c05ea2bf73c7?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/e5/e518be37-c7ad-4a4a-a112-0d59020c4686?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/8c/8ced595f-2d83-478c-9f0d-db9a52ee9e35?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "marketplace-1259197679494914",
@@ -362,7 +422,13 @@
       "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/746502979_1740555263652725_4114274336202799137_n.jpg",
       "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/746631534_1399146355414152_5064124463558808571_n.jpg"
     ],
-    "posted": "il y a plus d’une semaine"
+    "posted": "il y a plus d’une semaine",
+    "photos_featured": [
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/746529266_2776751832696065_7634226040943459068_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.84726-6/746522857_1339146861110245_7192840178418208649_n.jpg",
+      "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/746502979_1740555263652725_4114274336202799137_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/746631534_1399146355414152_5064124463558808571_n.jpg"
+    ]
   },
   {
     "id": "kijiji-1740184389",
@@ -386,7 +452,8 @@
     "photos": [
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/db/db5da5cf-1576-4b4b-9704-694497aec481?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/d0/d0710885-4cdf-433c-b9b8-2364e6fda78d?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/65/651e6d86-8778-4294-b9e8-1f122b0edf15?rule=kijijica-640-webp"
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/65/651e6d86-8778-4294-b9e8-1f122b0edf15?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/03/0375eb29-fe04-4164-951b-100e80093305?rule=kijijica-640-webp"
     ],
     "posted": "2026-07-05",
     "appliances": {
@@ -395,7 +462,12 @@
       "washer": true,
       "dryer": true,
       "notes": "In-unit: frigo, four/stove, dishwasher, washer, dryer, A/C. Kijiji laundry-in-unit flag was off but the ad lists them in the unit."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/db/db5da5cf-1576-4b4b-9704-694497aec481?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/d0/d0710885-4cdf-433c-b9b8-2364e6fda78d?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/65/651e6d86-8778-4294-b9e8-1f122b0edf15?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "marketplace-940068192445281",
@@ -428,7 +500,13 @@
       "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/776130974_1722847592332180_4789832472254929280_n.jpg",
       "https://scontent-dfw6-2.xx.fbcdn.net/v/t45.5328-4/776716779_1046757864601659_5060763541931827421_n.jpg"
     ],
-    "posted": "il y a plus d’une semaine"
+    "posted": "il y a plus d’une semaine",
+    "photos_featured": [
+      "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.84726-6/778958121_1044302514879199_6966280677148419788_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/776324670_2884061818637942_2899824387101566729_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/776130974_1722847592332180_4789832472254929280_n.jpg",
+      "https://scontent-dfw6-2.xx.fbcdn.net/v/t45.5328-4/776716779_1046757864601659_5060763541931827421_n.jpg"
+    ]
   },
   {
     "id": "kijiji-1741818910",
@@ -462,7 +540,13 @@
       "washer": true,
       "dryer": true,
       "notes": "In-unit stainless: Frigidaire fridge, stove/oven, microwave, GE dishwasher, washer and dryer, A/C."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/09/09f2e33d-251a-484f-b808-1f3857477873?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/37/37c5f7c1-9500-4b70-bfea-5968c18b2acc?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/29/291dfa4a-a321-4ea5-a00d-63ed6528aa4e?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/bb/bbd0d753-232d-4234-8033-7d3aa7b6bbda?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "marketplace-911445411232545",
@@ -495,7 +579,13 @@
       "https://scontent-dfw6-1.xx.fbcdn.net/v/t45.5328-4/740031476_1037727751972551_8352198230677479993_n.jpg",
       "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/737253813_889715693777879_6220544272647345770_n.jpg"
     ],
-    "posted": "il y a 7 semaines"
+    "posted": "il y a 7 semaines",
+    "photos_featured": [
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/737982282_4500268260243030_2455992187919199118_n.jpg",
+      "https://scontent-dfw6-2.xx.fbcdn.net/v/t45.5328-4/737422044_1428441179116929_8602497615481579467_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t45.5328-4/740031476_1037727751972551_8352198230677479993_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/737253813_889715693777879_6220544272647345770_n.jpg"
+    ]
   },
   {
     "id": "kijiji-1740664802",
@@ -519,7 +609,8 @@
     "photos": [
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/cb/cb9f1258-ed1f-4e2f-abee-c7c7c2e85b60?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/fa/faa78666-bf53-4e15-9e9c-6bbdde4f38dc?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/33/33a8a472-b178-4579-979a-55e24b00d783?rule=kijijica-640-webp"
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/33/33a8a472-b178-4579-979a-55e24b00d783?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/b2/b2a9f04c-7b16-47b5-ab45-5c0a90689445?rule=kijijica-640-webp"
     ],
     "posted": "2026-07-16",
     "appliances": {
@@ -528,7 +619,12 @@
       "washer": true,
       "dryer": true,
       "notes": "Fully equipped kitchen (all électros) + in-unit washer/dryer; portable A/C included."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/cb/cb9f1258-ed1f-4e2f-abee-c7c7c2e85b60?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/fa/faa78666-bf53-4e15-9e9c-6bbdde4f38dc?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/33/33a8a472-b178-4579-979a-55e24b00d783?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "kijiji-1742019392",
@@ -552,7 +648,8 @@
     "photos": [
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ed/ed8d49aa-7063-45b3-96ba-63723dccc1b0?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/14/145155dd-5a16-41fd-bf18-cce2e0e73532?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/b8/b8818eb5-853a-43a6-a534-a8d1b8723f33?rule=kijijica-640-webp"
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/b8/b8818eb5-853a-43a6-a534-a8d1b8723f33?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c8/c8fe5748-e973-4230-9a40-2ec26d70a92a?rule=kijijica-640-webp"
     ],
     "posted": "2026-08-14",
     "appliances": {
@@ -561,7 +658,12 @@
       "washer": true,
       "dryer": true,
       "notes": "New électros: réfrigérateur, four, lave-vaisselle, laveuse, sécheuse."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ed/ed8d49aa-7063-45b3-96ba-63723dccc1b0?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/14/145155dd-5a16-41fd-bf18-cce2e0e73532?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/b8/b8818eb5-853a-43a6-a534-a8d1b8723f33?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "kijiji-1741738000",
@@ -585,7 +687,8 @@
     "photos": [
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/1c/1c05d669-e64d-4aa5-a237-30b45c96ad02?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/65/650a925e-8c92-4798-bd89-27c7a8d13a31?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/03/03ff4e8f-7078-484f-8aea-90654b0ef854?rule=kijijica-640-webp"
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/03/03ff4e8f-7078-484f-8aea-90654b0ef854?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/b6/b61511ff-0134-4d41-b3ef-212f31ae3ab2?rule=kijijica-640-webp"
     ],
     "posted": "2026-08-08",
     "appliances": {
@@ -594,7 +697,12 @@
       "washer": true,
       "dryer": true,
       "notes": "In-unit: frigo, cuisinière, lave-vaisselle, laveuse, sécheuse."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/1c/1c05d669-e64d-4aa5-a237-30b45c96ad02?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/65/650a925e-8c92-4798-bd89-27c7a8d13a31?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/03/03ff4e8f-7078-484f-8aea-90654b0ef854?rule=kijijica-640-webp"
+    ]
   },
   {
     "id": "kijiji-1742024029",
@@ -628,6 +736,12 @@
       "washer": true,
       "dryer": true,
       "notes": "In-unit: cuisinière, réfrigérateur, lave-vaisselle, laveuse, sécheuse."
-    }
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/7a/7a049a4e-e5cb-408e-9ad3-3a402ed1ddf6?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6d/6d8074aa-88f8-468e-88b7-89e0797bf0af?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/dd/dd86febc-4e19-4b6c-96e7-eaea88f321d7?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/1a/1aaaf9a9-d425-402b-bbef-30c0188234fa?rule=kijijica-640-webp"
+    ]
   }
 ]
