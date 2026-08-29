@@ -1,98 +1,34 @@
 [
   {
-    "id": "kijiji-1742677129",
+    "id": "kijiji-1742035223",
     "source": "kijiji",
-    "title": "Condo 4 1/2 à louer au cœur du Plateau Mont-Royal",
-    "price": 2350,
+    "title": "4.5 2sdb Appartement neuf à louer Plateau-Mont-Royal-Bloc Rivard",
+    "price": 2480,
     "neighborhood": "Plateau Mont-Royal",
-    "address": "4417 rue De La Roche, Montréal, QC H2J 3J2",
-    "lat": 45.52828,
-    "lng": -73.57721,
+    "address": "5341–5363 rue Rivard, Montréal, QC H2J 2P7",
+    "lat": 45.52923,
+    "lng": -73.59241,
     "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 800,
+    "bathrooms": 2,
+    "sqft": null,
     "bright": true,
     "basement": false,
-    "high_end_notes": "Bright closed bedrooms; quartz kitchen; bathroom renovated 2025 with heated floors; in-unit W/D and wall A/C; quiet 8-unit building steps from Mont-Royal metro and Parc La Fontaine.",
-    "description": "--- English version below --- 4.5 Plateau – métro Mont-Royal / parc La Fontaine Adresse : 4417 rue De La Roche, Montréal Vous serez rapidement séduit par le condo et son emplacement sur le Plateau Mont-Royal. Le condo est propre, lumineux et bien entretenu, avec plusieurs améliorations récentes effectuées. Situé dans u…",
-    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/condo-4-1-2-a-louer-au-coeur-du-plateau-mont-royal/1742677129",
+    "high_end_notes": "Brand-new 12-unit Bloc Rivard: 2 bedrooms + 2 bathrooms, quartz counters, 1–2 private balconies, lots of natural light. Small boutique new-build (not a mega tower) between Laurier and Rosemont metros.",
+    "description": "Condo rental apartment for rent-logement locatif-2 chambres/bedrooms-4.5-4 1/2-2cc-Plateau-Mont-Royal-Mile-End-Montreal-metros Laurier-Rosemont Saint-Denis-Parc Lafontaine Le Bloc Rivard: 5341-5343 rue Rivard Plateau Mont-Royal Occupation Été 2025 / Move-in Summer 2025 Chacun des 12 condos, de 2 ou 3 chambres, est conç…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-5-2sdb-appartement-neuf-a-louer-plateau-mont-royal-bloc-rivard/1742035223",
     "photos": [
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/bd/bd0c1bd0-545f-4684-9a75-fe3b1ea8c168?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/51/516b6433-ed5f-48f7-8de6-ba1e1fea0ba6?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/54/5410817e-3010-4844-95fb-ea3676d2b67a?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/a9/a98370d4-8b3f-4270-89cc-eadfedf0f533?rule=kijijica-640-webp"
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/7c/7cc27885-da8e-4219-99ab-ca7c6dfef0b1?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/cc/cc594e32-de0c-41e7-821c-8f493a679abb?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/18/1870885f-d1cd-4a4c-96b6-24212cb32a69?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/20/203cb3b5-5491-4c4e-b020-ba34fe0676a1?rule=kijijica-640-webp"
     ],
-    "posted": "2026-08-28",
+    "posted": "2026-08-14",
     "appliances": {
       "stove": true,
       "fridge": true,
       "washer": true,
       "dryer": true,
-      "notes": "In-unit: fridge, cuisinière, dishwasher, microwave, washer, dryer."
-    }
-  },
-  {
-    "id": "kijiji-1740915606",
-    "source": "kijiji",
-    "title": "4 ½ sur le Plateau-Mont-Royal- animaux  acceptés",
-    "price": 2265,
-    "neighborhood": "Plateau Mont-Royal",
-    "address": "4609 Rue de la Roche, Montréal, QC H2J 3J5",
-    "lat": 45.52958,
-    "lng": -73.57998,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 900,
-    "bright": true,
-    "basement": false,
-    "high_end_notes": "2021 concrete building (quiet, well insulated); large private terrace; professional management; AC; pet-friendly; 10 min walk to Mont-Royal and Laurier metros.",
-    "description": "*** English description below *** 4 ½ sur le Plateau-Mont-Royal- animaux acceptés – Calme & grande terrasse privée 2265$ / mois Cessation de bail, nous quittons notre logement pour un trois chambres. Disponible à partir du 1er août mais nous sommes flexible. Bonne isolation et immeuble très calme. L'immeuble est en bét…",
-    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-sur-le-plateau-mont-royal-animaux-acceptes/1740915606",
-    "photos": [
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6a/6a80881b-c819-4bdb-8f24-fa8f01cd5d3e?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/68/680fe47c-98d8-40e5-a517-a3eea9ae259c?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6a/6a7caa68-6ff7-462b-9086-ed9957479372?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/0c/0c01e740-1e2c-4701-923b-995bd3e21f8f?rule=kijijica-640-webp"
-    ],
-    "posted": "2026-07-21",
-    "appliances": {
-      "stove": true,
-      "fridge": true,
-      "washer": true,
-      "dryer": true,
-      "notes": "In-unit: réfrigérateur, cuisinière, lave-vaisselle, laveuse, sécheuse + clim."
-    }
-  },
-  {
-    "id": "kijiji-1740847537",
-    "source": "kijiji",
-    "title": "4 1/2 plateau mont royal",
-    "price": 2290,
-    "neighborhood": "Plateau Mont-Royal",
-    "address": "5155 Rue St-Hubert, Montréal, QC H2J 2Y2",
-    "lat": 45.52948,
-    "lng": -73.58855,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 950,
-    "bright": true,
-    "basement": false,
-    "high_end_notes": "Hardwood throughout, heat pump, bright spacious living room, king-size primary, private fenced backyard/terrace. Ground floor of a quiet soundproofed building, not a basement. Steps from Parc Laurier and métro Laurier.",
-    "description": "Magnifique 4½ disponible le 1er septembre 2 290 $/mois (English follows) Spacieux appartement 4½ situé au rez-de-chaussée d’un immeuble calme et bien insonorisé, parfait pour un emménagement facile! Caractéristiques : • Cour arrière privée clôturée avec espace gazonné et terrasse, idéale pour profiter de l’extérieur ou…",
-    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-1-2-plateau-mont-royal/1740847537",
-    "photos": [
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/b8/b8e63fe6-bdc6-4be8-87b0-0dcc384f974e?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/9a/9a3ddba5-809b-4300-8db6-bfdc0e6d323b?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c9/c93b63c3-7987-4e21-8051-79ae2844a95e?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ee/ee7ef787-ac9f-461e-9fe0-fbc96d4ff850?rule=kijijica-640-webp"
-    ],
-    "posted": "2026-07-20",
-    "appliances": {
-      "stove": true,
-      "fridge": true,
-      "washer": true,
-      "dryer": true,
-      "notes": "In-unit: réfrigérateur, cuisinière, micro-ondes, lave-vaisselle, laveuse, sécheuse."
+      "notes": "Five new électros: frigo, poêle/stove, dishwasher, washer, dryer."
     }
   },
   {
@@ -128,70 +64,6 @@
     }
   },
   {
-    "id": "kijiji-1740921142",
-    "source": "kijiji",
-    "title": "4.5 - Plateau -Transfer de bail (1er septembre ou 1er octobre).",
-    "price": 2200,
-    "neighborhood": "Plateau Mont-Royal",
-    "address": "Rue de Bordeaux, Montréal (Plateau near Mont-Royal)",
-    "lat": 45.53554,
-    "lng": -73.5746,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 900,
-    "bright": true,
-    "basement": false,
-    "high_end_notes": "Freshly renovated furnished 4½ with front and back terraces and in-unit A/C. Good for two professionals (furnished with sofa, tables, chairs). Independent landlords.",
-    "description": "English below Transfert de bail pour le 1er septembre ou le 1er octobre 2026 (dates flexibles) – Plateau (près du Mont-Royal) | 4 ½ meublé + climatisation + terrasses Superbe espace fraîchement rénové, propriétaires communicatifs et courtois. Bail jusqu’en juillet 2027, renouvelable - 2 200 $ (Hydro et Internet non inc…",
-    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-5-plateau-transfer-de-bail-1er-septembre-ou-1er-octobre/1740921142",
-    "photos": [
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/d8/d80a2456-033c-45d7-8b17-d8ed90e2c2d7?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ab/ab54ca33-e2e5-4de6-b644-1c108a76704c?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/77/77f1afb6-e574-430c-9046-f21c1452bcec?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/e5/e537b4f1-ffaa-4427-bb3f-4616f6907394?rule=kijijica-640-webp"
-    ],
-    "posted": "2026-07-21",
-    "appliances": {
-      "stove": true,
-      "fridge": true,
-      "washer": true,
-      "dryer": true,
-      "notes": "Furnished including dishwasher, washer, dryer, fridge, stove."
-    }
-  },
-  {
-    "id": "kijiji-1742024029",
-    "source": "kijiji",
-    "title": "4.5 À LOUER/ FOR RENT À MONTRÉAL",
-    "price": 2000,
-    "neighborhood": "Mile End",
-    "address": "Montréal, QC H2T 1R2 (Villeneuve / St-Laurent / Mont-Royal)",
-    "lat": 45.52092,
-    "lng": -73.58783,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 1060,
-    "bright": true,
-    "basement": false,
-    "high_end_notes": "Spacious ~1060 sqft, renovated kitchen and bathroom, bright. Strong value at $2000 with full appliance package. Near Jean-Talon Market, Mont-Royal and Laurier metros.",
-    "description": "Un 4 ½ au cœur de l’arrondissement du Plateau-Mont-Royal, à proximité des commerces, des restaurants, des universités et des espaces verts (Parc du Mont-Royal) et du marché Jean Talon. Rues principales : Boul. Saint-Laurent, rue Villeneuve et ave Mont-Royal. Le logement est spacieux et lumineux avec une salle de bain e…",
-    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-5-a-louer-for-rent-a-montreal/1742024029",
-    "photos": [
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/7a/7a049a4e-e5cb-408e-9ad3-3a402ed1ddf6?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/dd/dd86febc-4e19-4b6c-96e7-eaea88f321d7?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/1a/1aaaf9a9-d425-402b-bbef-30c0188234fa?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6d/6d8074aa-88f8-468e-88b7-89e0797bf0af?rule=kijijica-640-webp"
-    ],
-    "posted": "2026-08-14",
-    "appliances": {
-      "stove": true,
-      "fridge": true,
-      "washer": true,
-      "dryer": true,
-      "notes": "In-unit: cuisinière, réfrigérateur, lave-vaisselle, laveuse, sécheuse."
-    }
-  },
-  {
     "id": "kijiji-1741658822",
     "source": "kijiji",
     "title": "Condo 2 chambres, 1 salle de bains, 1 bureau - VERDUN",
@@ -221,6 +93,196 @@
       "washer": true,
       "dryer": true,
       "notes": "Fridge, cuisinière, dishwasher, wall heat-pump/A/C, washer and dryer in-unit."
+    }
+  },
+  {
+    "id": "kijiji-1742677129",
+    "source": "kijiji",
+    "title": "Condo 4 1/2 à louer au cœur du Plateau Mont-Royal",
+    "price": 2350,
+    "neighborhood": "Plateau Mont-Royal",
+    "address": "4417 rue De La Roche, Montréal, QC H2J 3J2",
+    "lat": 45.52828,
+    "lng": -73.57721,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 800,
+    "bright": true,
+    "basement": false,
+    "high_end_notes": "Bright closed bedrooms; quartz kitchen; bathroom renovated 2025 with heated floors; in-unit W/D and wall A/C; quiet 8-unit building steps from Mont-Royal metro and Parc La Fontaine.",
+    "description": "--- English version below --- 4.5 Plateau – métro Mont-Royal / parc La Fontaine Adresse : 4417 rue De La Roche, Montréal Vous serez rapidement séduit par le condo et son emplacement sur le Plateau Mont-Royal. Le condo est propre, lumineux et bien entretenu, avec plusieurs améliorations récentes effectuées. Situé dans u…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/condo-4-1-2-a-louer-au-coeur-du-plateau-mont-royal/1742677129",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/bd/bd0c1bd0-545f-4684-9a75-fe3b1ea8c168?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/51/516b6433-ed5f-48f7-8de6-ba1e1fea0ba6?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/54/5410817e-3010-4844-95fb-ea3676d2b67a?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/a9/a98370d4-8b3f-4270-89cc-eadfedf0f533?rule=kijijica-640-webp"
+    ],
+    "posted": "2026-08-28",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "In-unit: fridge, cuisinière, dishwasher, microwave, washer, dryer."
+    }
+  },
+  {
+    "id": "marketplace-1716776642849760",
+    "source": "marketplace",
+    "title": "2 Beds 1 Bath Apartment – 4 1/2 rue Drolet (Plateau)",
+    "price": 2300,
+    "neighborhood": "Plateau Mont-Royal",
+    "address": "3997 Rue Drolet #A, Montréal, QC H2W 2L3",
+    "lat": null,
+    "lng": null,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": null,
+    "bright": true,
+    "basement": false,
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true
+    },
+    "high_end_notes": "Entièrement rénové en 2022 avec matériaux haut de gamme; dernier étage; meublé; climatisation; balcon; Walk Score 100.",
+    "description": "4 1/2 au cœur du Plateau, entièrement rénové en 2022 (matériaux haut de gamme). Dernier étage, 2 chambres avec fenêtres, séjour-cuisine ouvert, cuisine équipée (cuisinière, réfrigérateur, lave-vaisselle, laveuse et sécheuse), meublé, A/C, balcon, hydro et chauffage inclus.",
+    "url": "https://www.facebook.com/marketplace/item/1716776642849760/",
+    "photos": [
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t45.5328-4/740787865_1044018731457007_6661381328681646047_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t45.5328-4/739794662_2105470806983349_3274562430449882749_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/741324121_1372608658125349_2632750657347014481_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t45.5328-4/739264341_1027458942992710_7775462971650171946_n.jpg"
+    ],
+    "posted": "il y a plus d’une semaine"
+  },
+  {
+    "id": "kijiji-1740847537",
+    "source": "kijiji",
+    "title": "4 1/2 plateau mont royal",
+    "price": 2290,
+    "neighborhood": "Plateau Mont-Royal",
+    "address": "5155 Rue St-Hubert, Montréal, QC H2J 2Y2",
+    "lat": 45.52948,
+    "lng": -73.58855,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 950,
+    "bright": true,
+    "basement": false,
+    "high_end_notes": "Hardwood throughout, heat pump, bright spacious living room, king-size primary, private fenced backyard/terrace. Ground floor of a quiet soundproofed building, not a basement. Steps from Parc Laurier and métro Laurier.",
+    "description": "Magnifique 4½ disponible le 1er septembre 2 290 $/mois (English follows) Spacieux appartement 4½ situé au rez-de-chaussée d’un immeuble calme et bien insonorisé, parfait pour un emménagement facile! Caractéristiques : • Cour arrière privée clôturée avec espace gazonné et terrasse, idéale pour profiter de l’extérieur ou…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-1-2-plateau-mont-royal/1740847537",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/b8/b8e63fe6-bdc6-4be8-87b0-0dcc384f974e?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/9a/9a3ddba5-809b-4300-8db6-bfdc0e6d323b?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c9/c93b63c3-7987-4e21-8051-79ae2844a95e?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ee/ee7ef787-ac9f-461e-9fe0-fbc96d4ff850?rule=kijijica-640-webp"
+    ],
+    "posted": "2026-07-20",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "In-unit: réfrigérateur, cuisinière, micro-ondes, lave-vaisselle, laveuse, sécheuse."
+    }
+  },
+  {
+    "id": "marketplace-27141923258751240",
+    "source": "marketplace",
+    "title": "4.5 tout inclus au Dominik | Quartier des Spectacles | 1 MOIS GRATUIT",
+    "price": 2275,
+    "neighborhood": "Ville-Marie",
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": null,
+    "bright": true,
+    "basement": false,
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true
+    },
+    "high_end_notes": "Immeuble neuf Le Dominik: gym, rangement vélos, Expedibox, dépanneur, ascenseur, climatisation centrale, buanderie dans le logement; Walk Score 100.",
+    "description": "4.5 tout inclus au Dominik, Quartier des Spectacles. Inclus: chauffage, eau, électricité, climatisation, réfrigérateur, cuisinière et four, lave-vaisselle, micro-ondes. Buanderie dans le logement. Marche du métro Berri-UQAM.",
+    "url": "https://www.facebook.com/marketplace/item/27141923258751240/",
+    "photos": [
+      "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/740197161_122285554148062002_7081138977831354029_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/714722841_122282426486062002_2354384167131350183_n.jpg",
+      "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.30808-6/714699735_122282426318062002_1301067413175861690_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/714611807_122282426228062002_164420940711200983_n.jpg"
+    ],
+    "posted": "il y a plus d’une semaine"
+  },
+  {
+    "id": "kijiji-1740915606",
+    "source": "kijiji",
+    "title": "4 ½ sur le Plateau-Mont-Royal- animaux  acceptés",
+    "price": 2265,
+    "neighborhood": "Plateau Mont-Royal",
+    "address": "4609 Rue de la Roche, Montréal, QC H2J 3J5",
+    "lat": 45.52958,
+    "lng": -73.57998,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 900,
+    "bright": true,
+    "basement": false,
+    "high_end_notes": "2021 concrete building (quiet, well insulated); large private terrace; professional management; AC; pet-friendly; 10 min walk to Mont-Royal and Laurier metros.",
+    "description": "*** English description below *** 4 ½ sur le Plateau-Mont-Royal- animaux acceptés – Calme & grande terrasse privée 2265$ / mois Cessation de bail, nous quittons notre logement pour un trois chambres. Disponible à partir du 1er août mais nous sommes flexible. Bonne isolation et immeuble très calme. L'immeuble est en bét…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-sur-le-plateau-mont-royal-animaux-acceptes/1740915606",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6a/6a80881b-c819-4bdb-8f24-fa8f01cd5d3e?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/68/680fe47c-98d8-40e5-a517-a3eea9ae259c?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6a/6a7caa68-6ff7-462b-9086-ed9957479372?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/0c/0c01e740-1e2c-4701-923b-995bd3e21f8f?rule=kijijica-640-webp"
+    ],
+    "posted": "2026-07-21",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "In-unit: réfrigérateur, cuisinière, lave-vaisselle, laveuse, sécheuse + clim."
+    }
+  },
+  {
+    "id": "kijiji-1740921142",
+    "source": "kijiji",
+    "title": "4.5 - Plateau -Transfer de bail (1er septembre ou 1er octobre).",
+    "price": 2200,
+    "neighborhood": "Plateau Mont-Royal",
+    "address": "Rue de Bordeaux, Montréal (Plateau near Mont-Royal)",
+    "lat": 45.53554,
+    "lng": -73.5746,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 900,
+    "bright": true,
+    "basement": false,
+    "high_end_notes": "Freshly renovated furnished 4½ with front and back terraces and in-unit A/C. Good for two professionals (furnished with sofa, tables, chairs). Independent landlords.",
+    "description": "English below Transfert de bail pour le 1er septembre ou le 1er octobre 2026 (dates flexibles) – Plateau (près du Mont-Royal) | 4 ½ meublé + climatisation + terrasses Superbe espace fraîchement rénové, propriétaires communicatifs et courtois. Bail jusqu’en juillet 2027, renouvelable - 2 200 $ (Hydro et Internet non inc…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-5-plateau-transfer-de-bail-1er-septembre-ou-1er-octobre/1740921142",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/d8/d80a2456-033c-45d7-8b17-d8ed90e2c2d7?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ab/ab54ca33-e2e5-4de6-b644-1c108a76704c?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/77/77f1afb6-e574-430c-9046-f21c1452bcec?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/e5/e537b4f1-ffaa-4427-bb3f-4616f6907394?rule=kijijica-640-webp"
+    ],
+    "posted": "2026-07-21",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "Furnished including dishwasher, washer, dryer, fridge, stove."
     }
   },
   {
@@ -256,6 +318,37 @@
     }
   },
   {
+    "id": "marketplace-1259197679494914",
+    "source": "marketplace",
+    "title": "CESSION DE BAIL – Condo 4½ moderne près du métro Papineau",
+    "price": 2195,
+    "neighborhood": "Ville-Marie",
+    "address": "2130 Rue Laforce, Montréal, QC H2K 0B9",
+    "lat": null,
+    "lng": null,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 900,
+    "bright": true,
+    "basement": false,
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true
+    },
+    "high_end_notes": "Immeuble moderne géré par CAPREIT: piscine, spa, terrasse BBQ; climatisation; tous électroménagers; stationnement intérieur disponible.",
+    "description": "Condo 4½ (2 chambres fermées, 1 sdb) dans immeuble moderne. Climatisation, laveuse et sécheuse dans l'unité, tous les électroménagers inclus, 900 pi². 5 min à pied du métro Papineau. Bail du 1er août 2026 au 31 août 2027, 2 195 $/mois (électricité non incluse).",
+    "url": "https://www.facebook.com/marketplace/item/1259197679494914/",
+    "photos": [
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/746529266_2776751832696065_7634226040943459068_n.jpg",
+      "https://scontent-dfw5-2.xx.fbcdn.net/v/t45.5328-4/746502979_1740555263652725_4114274336202799137_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/746631534_1399146355414152_5064124463558808571_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.84726-6/746522857_1339146861110245_7192840178418208649_n.jpg"
+    ],
+    "posted": "il y a plus d’une semaine"
+  },
+  {
     "id": "kijiji-1740184389",
     "source": "kijiji",
     "title": "CESSION DE BAIL – 4 ½ à Saint-Henri",
@@ -286,6 +379,100 @@
       "dryer": true,
       "notes": "In-unit: frigo, four/stove, dishwasher, washer, dryer, A/C. Kijiji laundry-in-unit flag was off but the ad lists them in the unit."
     }
+  },
+  {
+    "id": "marketplace-940068192445281",
+    "source": "marketplace",
+    "title": "Appartement moderne 2 chambres – Tour Fides, Quartier des Spectacles",
+    "price": 2136,
+    "neighborhood": "Ville-Marie",
+    "address": "233 Boulevard René-Lévesque E, Montréal, QC H2X",
+    "lat": null,
+    "lng": null,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqft": null,
+    "bright": true,
+    "basement": false,
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true
+    },
+    "high_end_notes": "Tour Fides: piscine intérieure et sauna, centre sportif/yoga, cinéma privé, coworking, concierge et sécurité 24/7; internet, électricité, chauffage et eau chaude inclus; vue sur le centre-ville.",
+    "description": "Appartement moderne 2 chambres au cœur du Quartier des Spectacles (Tour Fides). Électroménagers et laveuse/sécheuse inclus, climatisation disponible, buanderie dans le logement. Promotion 3 mois gratuits sur bail de 15 mois (prix affiché net).",
+    "url": "https://www.facebook.com/marketplace/item/940068192445281/",
+    "photos": [
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/776324670_2884061818637942_2899824387101566729_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/776130974_1722847592332180_4789832472254929280_n.jpg",
+      "https://scontent-dfw6-2.xx.fbcdn.net/v/t45.5328-4/776716779_1046757864601659_5060763541931827421_n.jpg",
+      "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.84726-6/778958121_1044302514879199_6966280677148419788_n.jpg"
+    ],
+    "posted": "il y a plus d’une semaine"
+  },
+  {
+    "id": "kijiji-1741818910",
+    "source": "kijiji",
+    "title": "Le Seville - Large bright 4-1/2 two-bedroom apartment",
+    "price": 2100,
+    "neighborhood": "Ville-Marie",
+    "address": "Le Seville, Montréal, QC H3H 0A2 (Atwater / Ste-Catherine)",
+    "lat": 45.49106,
+    "lng": -73.58324,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqft": 845,
+    "bright": true,
+    "basement": false,
+    "high_end_notes": "7th-floor corner unit, park view, lots of winter sun, private balcony, quartz island, 2 bathrooms, stainless package. Building amenities (pools, gym, spa). Corporate-ish tower but genuinely bright and downtown for WFH + occasional office.",
+    "description": "Le Seville, large 4.5 apartment, spacious living area, open concept kitchen - Premium location in the heart of Montréal! 7th floor, corner unit, view to park, lots of sunlight during winter; with private balcony. A locker for additional storage space. Top location at Atwater/Ste-Catherine: - Steps away from Concordia U…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/le-seville-large-bright-4-1-2-two-bedroom-apartment/1741818910",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/09/09f2e33d-251a-484f-b808-1f3857477873?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/37/37c5f7c1-9500-4b70-bfea-5968c18b2acc?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/29/291dfa4a-a321-4ea5-a00d-63ed6528aa4e?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/bb/bbd0d753-232d-4234-8033-7d3aa7b6bbda?rule=kijijica-640-webp"
+    ],
+    "posted": "2026-08-10",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "In-unit stainless: Frigidaire fridge, stove/oven, microwave, GE dishwasher, washer and dryer, A/C."
+    }
+  },
+  {
+    "id": "marketplace-911445411232545",
+    "source": "marketplace",
+    "title": "🚨 4 1/2 | 2114 RUE STE-CATHERINE EST 2 MOIS GRATUITS !!",
+    "price": 2083,
+    "neighborhood": "Ville-Marie",
+    "address": "2114 rue Sainte-Catherine Est, Montréal, QC",
+    "lat": null,
+    "lng": null,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": null,
+    "bright": true,
+    "basement": false,
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true
+    },
+    "high_end_notes": "Immeuble style condo: piscine, gym, BBQ, lounge; tout inclus (électricité, chauffage, A/C, internet); lave-vaisselle, micro-ondes; 5 min métro Papineau; promo 2 mois gratuits.",
+    "description": "4 1/2 lumineux, moderne, très bien situé au cœur de Montréal. 2 chambres fermées, grand salon lumineux. Tout inclus: électricité, chauffage, eau chaude, A/C, internet, réfrigérateur, cuisinière, micro-ondes, lave-vaisselle, laveuse & sécheuse dans l'unité.",
+    "url": "https://www.facebook.com/marketplace/item/911445411232545/",
+    "photos": [
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/737982282_4500268260243030_2455992187919199118_n.jpg",
+      "https://scontent-dfw6-2.xx.fbcdn.net/v/t45.5328-4/737422044_1428441179116929_8602497615481579467_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t45.5328-4/740031476_1037727751972551_8352198230677479993_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/737253813_889715693777879_6220544272647345770_n.jpg"
+    ],
+    "posted": "il y a 7 semaines"
   },
   {
     "id": "kijiji-1740664802",
@@ -384,59 +571,27 @@
     }
   },
   {
-    "id": "kijiji-1741818910",
+    "id": "kijiji-1742024029",
     "source": "kijiji",
-    "title": "Le Seville - Large bright 4-1/2 two-bedroom apartment",
-    "price": 2100,
-    "neighborhood": "Downtown / Ville-Marie",
-    "address": "Le Seville, Montréal, QC H3H 0A2 (Atwater / Ste-Catherine)",
-    "lat": 45.49106,
-    "lng": -73.58324,
+    "title": "4.5 À LOUER/ FOR RENT À MONTRÉAL",
+    "price": 2000,
+    "neighborhood": "Mile End",
+    "address": "Montréal, QC H2T 1R2 (Villeneuve / St-Laurent / Mont-Royal)",
+    "lat": 45.52092,
+    "lng": -73.58783,
     "bedrooms": 2,
-    "bathrooms": 2,
-    "sqft": 845,
+    "bathrooms": 1,
+    "sqft": 1060,
     "bright": true,
     "basement": false,
-    "high_end_notes": "7th-floor corner unit, park view, lots of winter sun, private balcony, quartz island, 2 bathrooms, stainless package. Building amenities (pools, gym, spa). Corporate-ish tower but genuinely bright and downtown for WFH + occasional office.",
-    "description": "Le Seville, large 4.5 apartment, spacious living area, open concept kitchen - Premium location in the heart of Montréal! 7th floor, corner unit, view to park, lots of sunlight during winter; with private balcony. A locker for additional storage space. Top location at Atwater/Ste-Catherine: - Steps away from Concordia U…",
-    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/le-seville-large-bright-4-1-2-two-bedroom-apartment/1741818910",
+    "high_end_notes": "Spacious ~1060 sqft, renovated kitchen and bathroom, bright. Strong value at $2000 with full appliance package. Near Jean-Talon Market, Mont-Royal and Laurier metros.",
+    "description": "Un 4 ½ au cœur de l’arrondissement du Plateau-Mont-Royal, à proximité des commerces, des restaurants, des universités et des espaces verts (Parc du Mont-Royal) et du marché Jean Talon. Rues principales : Boul. Saint-Laurent, rue Villeneuve et ave Mont-Royal. Le logement est spacieux et lumineux avec une salle de bain e…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-5-a-louer-for-rent-a-montreal/1742024029",
     "photos": [
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/09/09f2e33d-251a-484f-b808-1f3857477873?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/37/37c5f7c1-9500-4b70-bfea-5968c18b2acc?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/29/291dfa4a-a321-4ea5-a00d-63ed6528aa4e?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/bb/bbd0d753-232d-4234-8033-7d3aa7b6bbda?rule=kijijica-640-webp"
-    ],
-    "posted": "2026-08-10",
-    "appliances": {
-      "stove": true,
-      "fridge": true,
-      "washer": true,
-      "dryer": true,
-      "notes": "In-unit stainless: Frigidaire fridge, stove/oven, microwave, GE dishwasher, washer and dryer, A/C."
-    }
-  },
-  {
-    "id": "kijiji-1742035223",
-    "source": "kijiji",
-    "title": "4.5 2sdb Appartement neuf à louer Plateau-Mont-Royal-Bloc Rivard",
-    "price": 2480,
-    "neighborhood": "Plateau Mont-Royal",
-    "address": "5341–5363 rue Rivard, Montréal, QC H2J 2P7",
-    "lat": 45.52923,
-    "lng": -73.59241,
-    "bedrooms": 2,
-    "bathrooms": 2,
-    "sqft": null,
-    "bright": true,
-    "basement": false,
-    "high_end_notes": "Brand-new 12-unit Bloc Rivard: 2 bedrooms + 2 bathrooms, quartz counters, 1–2 private balconies, lots of natural light. Small boutique new-build (not a mega tower) between Laurier and Rosemont metros.",
-    "description": "Condo rental apartment for rent-logement locatif-2 chambres/bedrooms-4.5-4 1/2-2cc-Plateau-Mont-Royal-Mile-End-Montreal-metros Laurier-Rosemont Saint-Denis-Parc Lafontaine Le Bloc Rivard: 5341-5343 rue Rivard Plateau Mont-Royal Occupation Été 2025 / Move-in Summer 2025 Chacun des 12 condos, de 2 ou 3 chambres, est conç…",
-    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-5-2sdb-appartement-neuf-a-louer-plateau-mont-royal-bloc-rivard/1742035223",
-    "photos": [
-      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/7c/7cc27885-da8e-4219-99ab-ca7c6dfef0b1?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/cc/cc594e32-de0c-41e7-821c-8f493a679abb?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/18/1870885f-d1cd-4a4c-96b6-24212cb32a69?rule=kijijica-640-webp",
-      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/20/203cb3b5-5491-4c4e-b020-ba34fe0676a1?rule=kijijica-640-webp"
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/7a/7a049a4e-e5cb-408e-9ad3-3a402ed1ddf6?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/dd/dd86febc-4e19-4b6c-96e7-eaea88f321d7?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/1a/1aaaf9a9-d425-402b-bbef-30c0188234fa?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6d/6d8074aa-88f8-468e-88b7-89e0797bf0af?rule=kijijica-640-webp"
     ],
     "posted": "2026-08-14",
     "appliances": {
@@ -444,7 +599,7 @@
       "fridge": true,
       "washer": true,
       "dryer": true,
-      "notes": "Five new électros: frigo, poêle/stove, dishwasher, washer, dryer."
+      "notes": "In-unit: cuisinière, réfrigérateur, lave-vaisselle, laveuse, sécheuse."
     }
   }
 ]
