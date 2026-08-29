@@ -159,25 +159,9 @@ main.container {
   padding: 1.4rem 0 2.2rem;
 }
 
-/* Layout with map */
-.content-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-@media (min-width: 980px) {
-  .content-grid {
-    grid-template-columns: 420px 1fr;
-    align-items: start;
-  }
-}
-.map-panel {
-  position: sticky;
-  top: 66px; /* below sticky controls */
-  align-self: start;
-}
+.map-section { margin-bottom: 1.2rem; }
 .map {
-  height: clamp(260px, 68vh, 720px);
+  height: clamp(260px, 42vh, 420px);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -211,46 +195,54 @@ main.container {
   font-size: 1.3rem;
   color: var(--accent-ink);
 }
-.cards {
+
+/* Flat listings grid (1 col on small, 2 cols ≥700px) */
+.listings-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
+@media (min-width: 700px) {
+  .listings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .card {
-  grid-column: span 12;
   background: var(--paper);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   overflow: clip;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
 }
-@media (min-width: 720px) {
-  .card {
-    grid-column: span 6;
-  }
-}
-@media (min-width: 980px) {
-  .card {
-    grid-column: span 4;
-  }
-}
-.media-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-auto-rows: 120px;
-  gap: 2px;
+/* Square-ish hero */
+.card-hero {
+  width: 100%;
+  aspect-ratio: 1 / 1;
   background: #eee;
+  overflow: hidden;
 }
-.media-grid img {
+.card-hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   background: #ddd;
 }
-.media-grid .main {
-  grid-row: span 2;
+/* Thumb strip under hero */
+.card-thumbs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: #eee;
+}
+.card-thumbs img {
+  width: 100%;
+  height: 86px;
+  object-fit: cover;
+  display: block;
+  background: #ddd;
 }
 .card-body {
   padding: 0.9rem 1rem 1.1rem;
@@ -259,13 +251,8 @@ main.container {
   font-weight: 600;
   font-size: 1.15rem;
 }
-.meta {
-  margin-top: 0.3rem;
-  color: var(--subtle-ink);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem 1rem;
-}
+.meta { margin-top: 0.3rem; color: var(--subtle-ink); }
+.meta-line { display: flex; flex-wrap: wrap; gap: 0.6rem 0.9rem; }
 .badge {
   display: inline-flex;
   align-items: center;
