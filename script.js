@@ -319,7 +319,8 @@ function renderCard(l) {
   const heroWrap = document.createElement('div');
   heroWrap.className = 'card-hero';
   const hero = document.createElement('img');
-  hero.src = (Array.isArray(l.photos) && l.photos[0]) ? l.photos[0] : PLACEHOLDER_DATA_URL;
+  const featured = (Array.isArray(l.photos_featured) && l.photos_featured.length) ? l.photos_featured : (l.photos || []);
+  hero.src = featured[0] ? featured[0] : PLACEHOLDER_DATA_URL;
   hero.loading = 'lazy';
   hero.alt = buildAlt(l, 0);
   hero.decoding = 'async';
@@ -332,7 +333,7 @@ function renderCard(l) {
   // Thumbnail strip (up to 3 more)
   const thumbs = document.createElement('div');
   thumbs.className = 'card-thumbs';
-  const thumbSrcs = Array.isArray(l.photos) ? l.photos.slice(1, 4) : [];
+  const thumbSrcs = featured.slice(1, 4);
   while (thumbSrcs.length < 3) thumbSrcs.push(PLACEHOLDER_DATA_URL);
   thumbSrcs.forEach((src, i) => {
     const t = document.createElement('img');
@@ -443,8 +444,11 @@ function openModal(l) {
   els.modalDesc.textContent = (l.description || '').trim() || (l.high_end_notes || '').trim() || '';
   els.modalLink.href = l.url || '#';
 
-  // Build carousel
-  state.modal.photos = Array.isArray(l.photos) && l.photos.length ? l.photos.slice() : [PLACEHOLDER_DATA_URL];
+  // Full gallery in the modal (every photo we have, not just the card picks)
+  const allPhotos = Array.isArray(l.photos) && l.photos.length ? l.photos.slice() : (
+    Array.isArray(l.photos_featured) && l.photos_featured.length ? l.photos_featured.slice() : [PLACEHOLDER_DATA_URL]
+  );
+  state.modal.photos = allPhotos;
   state.modal.currentIndex = 0;
   renderCarousel();
 
@@ -466,6 +470,8 @@ function openModal(l) {
 function closeModal() {
   els.modal.hidden = true;
   els.carouselTrack.innerHTML = '';
+  const strip = document.querySelector('.carousel-strip');
+  if (strip) strip.remove();
   if (state.modal.releaseFocusTrap) {
     state.modal.releaseFocusTrap();
     state.modal.releaseFocusTrap = null;
@@ -477,7 +483,7 @@ function renderCarousel() {
   state.modal.photos.forEach((src, idx) => {
     const img = document.createElement('img');
     img.src = src || PLACEHOLDER_DATA_URL;
-    img.alt = `Photo ${idx + 1}`;
+    img.alt = `Photo ${idx + 1} sur ${state.modal.photos.length}`;
     img.loading = idx === 0 ? 'eager' : 'lazy';
     img.decoding = 'async';
     img.onerror = () => {
@@ -486,8 +492,46 @@ function renderCarousel() {
     };
     els.carouselTrack.appendChild(img);
   });
-  // Ensure currentIndex is visible
+  renderCarouselMeta();
   scrollCarouselTo(state.modal.currentIndex);
+}
+
+function renderCarouselMeta() {
+  const car = document.querySelector('.carousel');
+  if (!car) return;
+  let count = car.querySelector('.carousel-count');
+  if (!count) {
+    count = document.createElement('div');
+    count.className = 'carousel-count';
+    car.appendChild(count);
+  }
+  const n = state.modal.photos.length;
+  const i = (state.modal.currentIndex || 0) + 1;
+  count.textContent = n ? `${i} / ${n}` : '';
+
+  let strip = document.querySelector('.carousel-strip');
+  if (!strip) {
+    strip = document.createElement('div');
+    strip.className = 'carousel-strip';
+    car.insertAdjacentElement('afterend', strip);
+  }
+  strip.innerHTML = '';
+  state.modal.photos.forEach((src, idx) => {
+    const t = document.createElement('button');
+    t.type = 'button';
+    t.className = 'carousel-strip-item' + (idx === state.modal.currentIndex ? ' is-active' : '');
+    t.setAttribute('aria-label', `Photo ${idx + 1}`);
+    const img = document.createElement('img');
+    img.src = src || PLACEHOLDER_DATA_URL;
+    img.alt = '';
+    img.loading = 'lazy';
+    t.appendChild(img);
+    t.onclick = () => {
+      state.modal.currentIndex = idx;
+      scrollCarouselTo(idx);
+    };
+    strip.appendChild(t);
+  });
 }
 
 function moveCarousel(delta) {
@@ -502,6 +546,7 @@ function moveCarousel(delta) {
 function scrollCarouselTo(idx) {
   const width = els.carouselTrack.clientWidth;
   els.carouselTrack.scrollTo({ left: idx * width, behavior: 'smooth' });
+  renderCarouselMeta();
 }
 
 function updateLastUpdated() {
