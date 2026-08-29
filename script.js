@@ -186,7 +186,7 @@ async function init() {
   initMap();
   await loadListings();
   render();
-  updateLastUpdated();
+  await updateLastUpdated();
 }
 
 function renderPrimaryChips() {
@@ -644,18 +644,38 @@ function scrollCarouselTo(idx) {
   renderCarouselMeta();
 }
 
-function updateLastUpdated() {
-  const dates = state.allListings.map((l) => Date.parse(l.posted || '')).filter((t) => !Number.isNaN(t));
-  const ts = dates.length ? Math.max(...dates) : Date.now();
-  const d = new Date(ts);
+function formatMontrealDateTime(d) {
   try {
-    els.lastUpdated.textContent = new Intl.DateTimeFormat('fr-CA', {
-      dateStyle: 'long',
-      timeStyle: 'short'
+    const date = new Intl.DateTimeFormat('fr-CA', {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+      timeZone: 'America/Toronto'
     }).format(d);
+    const time = new Intl.DateTimeFormat('fr-CA', {
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: false,
+      timeZone: 'America/Toronto',
+      timeZoneName: 'short'
+    }).format(d);
+    return date + ', ' + time + ' (Montréal)';
   } catch {
-    els.lastUpdated.textContent = d.toLocaleString('fr-CA');
+    return d.toLocaleString('fr-CA', { timeZone: 'America/Toronto' }) + ' (Montréal)';
   }
+}
+async function updateLastUpdated() {
+  let d = null;
+  try {
+    const res = await fetch('updated.json', { cache: 'no-store' });
+    if (res.ok) {
+      const meta = await res.json();
+      if (meta && meta.updated_at) d = new Date(meta.updated_at);
+    }
+  } catch {}
+  if (!d || Number.isNaN(d.getTime())) d = new Date();
+  els.lastUpdated.textContent = formatMontrealDateTime(d);
 }
 
 // Utilities
