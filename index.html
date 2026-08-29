@@ -65,29 +65,26 @@
     </div>
 
     <main id="contenu" class="container">
-      <div class="content-grid">
-        <aside class="map-panel" aria-label="Carte de Montréal">
-          <div id="map" class="map" role="region" aria-label="Carte des annonces"></div>
-          <p class="map-help">Carte interactive — OpenStreetMap. Cliquez un repère pour surligner la carte et l’annonce.</p>
-        </aside>
-        <div class="list-panel">
-          <section id="emptyState" class="empty" hidden>
-            <h2>Aucune annonce pour l’instant</h2>
-            <p>
-              Lorsque des annonces réelles seront ajoutées à <code>listings.json</code>, elles apparaîtront ici. Nous ne fabriquons pas de fausses annonces.
-            </p>
-            <ul class="criteria-list">
-              <li>Budget: 2000–2500 $ / mois</li>
-              <li>Type: 4½ (au moins 2 chambres fermées ou bureau à domicile)</li>
-              <li>Quartiers: Plateau, Rosemont, Petite‑Patrie, Verdun, Ahuntsic, Ville‑Marie (centre‑ville), et environs (Mile End, Saint‑Henri, Griffintown)</li>
-              <li>Lumineux, rénové, pas de sous‑sol</li>
-              <li>Sources: Kijiji et Facebook Marketplace</li>
-            </ul>
-          </section>
+      <section class="map-section" aria-label="Carte de Montréal">
+        <div id="map" class="map" role="region" aria-label="Carte des annonces"></div>
+        <p class="map-help">Carte interactive — OpenStreetMap. Cliquez un repère pour surligner la carte et l’annonce.</p>
+      </section>
 
-          <section id="listingsByNeighborhood" class="neighborhood-groups" aria-live="polite"></section>
-        </div>
-      </div>
+      <section id="emptyState" class="empty" hidden>
+        <h2>Aucune annonce pour l’instant</h2>
+        <p>
+          Lorsque des annonces réelles seront ajoutées à <code>listings.json</code>, elles apparaîtront ici. Nous ne fabriquons pas de fausses annonces.
+        </p>
+        <ul class="criteria-list">
+          <li>Budget: 2000–2500 $ / mois</li>
+          <li>Type: 4½ (au moins 2 chambres fermées ou bureau à domicile)</li>
+          <li>Quartiers: Plateau, Rosemont, Petite‑Patrie, Verdun, Ahuntsic, Ville‑Marie (centre‑ville), et environs (Mile End, Saint‑Henri, Griffintown)</li>
+          <li>Lumineux, rénové, pas de sous‑sol</li>
+          <li>Sources: Kijiji et Facebook Marketplace</li>
+        </ul>
+      </section>
+
+      <section id="listingsGrid" class="listings-grid" aria-live="polite"></section>
     </main>
 
     <footer class="site-footer">

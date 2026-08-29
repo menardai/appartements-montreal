@@ -58,7 +58,7 @@ const els = {
   srcKijiji: document.getElementById('srcKijiji'),
   srcMarketplace: document.getElementById('srcMarketplace'),
   empty: document.getElementById('emptyState'),
-  groups: document.getElementById('listingsByNeighborhood'),
+  grid: document.getElementById('listingsGrid'),
   modal: document.getElementById('detailModal'),
   modalTitle: document.getElementById('modalTitle'),
   modalMeta: document.getElementById('modalMeta'),
@@ -279,7 +279,7 @@ function render() {
 
   if (filtered.length === 0) {
     els.empty.hidden = false;
-    els.groups.innerHTML = '';
+    els.grid.innerHTML = '';
     // Update map to empty state (no pins)
     updateMapMarkers([]);
     return;
@@ -287,42 +287,12 @@ function render() {
     els.empty.hidden = true;
   }
 
-  const groups = groupByNeighborhood(filtered);
-  // Order neighborhoods according to PRIMARY + SECONDARY + alphabetical fallback
-  const order = [...PRIMARY_NEIGHBORHOODS, ...SECONDARY_AREAS];
-  // Sort within each neighborhood group: default price high→low unless user picked price-asc
-  const withinSort = (state.sort === 'price-asc' || state.sort === 'price-desc') ? state.sort : 'price-desc';
-  const dir = withinSort === 'price-asc' ? 1 : -1;
-  for (const k of Object.keys(groups)) {
-    groups[k].sort((a, b) => (a.price - b.price) * dir);
-  }
-  const sortedKeys = Object.keys(groups).sort((a, b) => {
-    const ia = order.indexOf(a);
-    const ib = order.indexOf(b);
-    if (ia !== -1 && ib !== -1) return ia - ib;
-    if (ia !== -1) return -1;
-    if (ib !== -1) return 1;
-    return a.localeCompare(b, 'fr-CA');
-  });
-
   const frag = document.createDocumentFragment();
-  for (const key of sortedKeys) {
-    const section = document.createElement('section');
-    section.className = 'neighborhood-group';
-    const h = document.createElement('h2');
-    h.className = 'neighborhood-title';
-    h.textContent = key;
-    const cards = document.createElement('div');
-    cards.className = 'cards';
-    for (const l of groups[key]) {
-      cards.appendChild(renderCard(l));
-    }
-    section.appendChild(h);
-    section.appendChild(cards);
-    frag.appendChild(section);
+  for (const l of filtered) {
+    frag.appendChild(renderCard(l));
   }
-  els.groups.innerHTML = '';
-  els.groups.appendChild(frag);
+  els.grid.innerHTML = '';
+  els.grid.appendChild(frag);
   // Sync map markers with current filtered list
   updateMapMarkers(filtered);
 }
@@ -336,7 +306,6 @@ function renderCard(l) {
   card.setAttribute('aria-label', `Voir détails pour ${l.title || 'annonce'}`);
   card.addEventListener('click', () => {
     focusListingOnMap(l);
-    openModal(l);
   });
   card.addEventListener('keypress', (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
@@ -346,26 +315,36 @@ function renderCard(l) {
     }
   });
 
-  // Media grid: show up to 4 photos with first larger
-  const grid = document.createElement('div');
-  grid.className = 'media-grid';
-  const photos = Array.isArray(l.photos) ? l.photos.slice(0, 4) : [];
-  const placeholdersNeeded = Math.max(0, 3 - photos.length);
-  while (photos.length < 3) photos.push(PLACEHOLDER_DATA_URL);
-  if (photos.length < 1) photos.push(PLACEHOLDER_DATA_URL);
+  // Hero image (square-ish)
+  const heroWrap = document.createElement('div');
+  heroWrap.className = 'card-hero';
+  const hero = document.createElement('img');
+  hero.src = (Array.isArray(l.photos) && l.photos[0]) ? l.photos[0] : PLACEHOLDER_DATA_URL;
+  hero.loading = 'lazy';
+  hero.alt = buildAlt(l, 0);
+  hero.decoding = 'async';
+  hero.onerror = () => {
+    hero.onerror = null;
+    hero.src = PLACEHOLDER_DATA_URL;
+  };
+  heroWrap.appendChild(hero);
 
-  photos.forEach((src, idx) => {
-    const img = document.createElement('img');
-    img.src = src || PLACEHOLDER_DATA_URL;
-    img.loading = 'lazy';
-    img.alt = buildAlt(l, idx);
-    img.decoding = 'async';
-    img.onerror = () => {
-      img.onerror = null;
-      img.src = PLACEHOLDER_DATA_URL;
+  // Thumbnail strip (up to 3 more)
+  const thumbs = document.createElement('div');
+  thumbs.className = 'card-thumbs';
+  const thumbSrcs = Array.isArray(l.photos) ? l.photos.slice(1, 4) : [];
+  while (thumbSrcs.length < 3) thumbSrcs.push(PLACEHOLDER_DATA_URL);
+  thumbSrcs.forEach((src, i) => {
+    const t = document.createElement('img');
+    t.src = src || PLACEHOLDER_DATA_URL;
+    t.loading = 'lazy';
+    t.alt = buildAlt(l, i + 1);
+    t.decoding = 'async';
+    t.onerror = () => {
+      t.onerror = null;
+      t.src = PLACEHOLDER_DATA_URL;
     };
-    if (idx === 0) img.classList.add('main');
-    grid.appendChild(img);
+    thumbs.appendChild(t);
   });
 
   const body = document.createElement('div');
@@ -377,46 +356,62 @@ function renderCard(l) {
 
   const meta = document.createElement('div');
   meta.className = 'meta';
-  meta.innerHTML = `
+  const line1 = document.createElement('div');
+  line1.className = 'meta-line';
+  line1.innerHTML = `
     <span>${escapeHtml(l.neighborhood || '—')}</span>
-    <span>${l.bedrooms ?? '—'} ch · ${l.bathrooms ?? '—'} sdb</span>
     <span>${formatSqft(l.sqft)}</span>
+    ${l.floor ? `<span>${escapeHtml(l.floor)}</span>` : ''}
+  `;
+  const line2 = document.createElement('div');
+  line2.className = 'meta-line';
+  line2.innerHTML = `
+    <span>${l.bedrooms ?? '—'} ch</span>
+    ${buildApplianceBadges(l.appliances)}
     ${l.bright ? `<span class="badge" title="Lumineux confirmé">Lumineux</span>` : ''}
     ${l.basement ? `<span class="badge" title="Sous-sol">Sous-sol</span>` : ''}
     <span class="badge">${sourceLabel(l.source)}</span>
-    ${buildApplianceBadges(l.appliances)}
   `;
 
   const desc = document.createElement('p');
   desc.className = 'desc';
-  desc.textContent = truncate((l.description || '').trim() || (l.high_end_notes || '').trim() || l.title || '', 160);
+  desc.textContent = buildBlurb(l);
 
   const actions = document.createElement('div');
   actions.className = 'actions';
+  const btnAd = document.createElement('a');
+  btnAd.className = 'btn primary';
+  btnAd.href = l.url || '#';
+  btnAd.target = '_blank';
+  btnAd.rel = 'noopener noreferrer';
+  btnAd.textContent = "Voir l'annonce";
+  btnAd.addEventListener('click', (e) => {
+    e.stopPropagation();
+    focusListingOnMap(l);
+  });
   const btnView = document.createElement('button');
   btnView.type = 'button';
-  btnView.className = 'btn primary';
-  btnView.textContent = 'Voir les détails';
+  btnView.className = 'btn';
+  btnView.textContent = 'Détails';
   btnView.addEventListener('click', (e) => {
     e.stopPropagation();
     focusListingOnMap(l);
     openModal(l);
   });
-  const btnAd = document.createElement('a');
-  btnAd.className = 'btn';
-  btnAd.href = l.url || '#';
-  btnAd.target = '_blank';
-  btnAd.rel = 'noopener noreferrer';
-  btnAd.textContent = "Voir l'annonce";
-  actions.appendChild(btnView);
   actions.appendChild(btnAd);
+  actions.appendChild(btnView);
+
+  // Compose meta lines
+  meta.appendChild(line1);
+  meta.appendChild(line2);
 
   body.appendChild(price);
   body.appendChild(meta);
   body.appendChild(desc);
   body.appendChild(actions);
 
-  card.appendChild(grid);
+  card.appendChild(heroWrap);
+  card.appendChild(thumbs);
   card.appendChild(body);
   return card;
 }
@@ -568,6 +563,12 @@ function truncate(str, max) {
 }
 function escapeHtml(str) {
   return String(str).replace(/[&<>"']/g, (m) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+function buildBlurb(l) {
+  const blurb = (l.blurb_fr || '').trim();
+  if (blurb) return truncate(blurb, 160);
+  const fallback = (l.description || '').trim() || (l.high_end_notes || '').trim() || l.title || '';
+  return truncate(fallback, 160);
 }
 function buildAlt(l, idx) {
   const title = l.title || 'annonce';
