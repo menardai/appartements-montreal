@@ -105,11 +105,8 @@ h1, h2, h3 {
 }
 
 .controls-bar {
-  position: sticky;
-  top: 0;
-  z-index: 30;
-  backdrop-filter: saturate(130%) blur(6px);
-  background: color-mix(in oklab, var(--bg) 80%, white);
+  position: relative;
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
 }
 .controls {
