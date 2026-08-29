@@ -441,3 +441,15 @@ code {
   .carousel-track { scroll-behavior: auto; }
 }
 
+
+/* Nothing sticks on scroll except the listing detail modal */
+.site-hero,
+.controls-bar,
+.filters,
+.filter-group,
+.chips,
+.sort,
+.map-section,
+.listings-grid {
+  position: static;
+}
