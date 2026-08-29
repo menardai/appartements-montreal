@@ -48,6 +48,68 @@ const NEIGHBORHOOD_CENTROIDS = {
 };
 const GEOCODE_MIN_INTERVAL_MS = 1100; // be polite to Nominatim
 
+const RATINGS_KEY = 'appartements-ratings-v1';
+
+function loadRatings() {
+  try {
+    const raw = localStorage.getItem(RATINGS_KEY);
+    const data = raw ? JSON.parse(raw) : {};
+    return (data && typeof data === 'object') ? data : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveRatings(map) {
+  try { localStorage.setItem(RATINGS_KEY, JSON.stringify(map)); } catch {}
+}
+
+function listingKey(l) {
+  return String(l && (l.id || l.url) || '');
+}
+
+function getRating(l) {
+  const n = Number(loadRatings()[listingKey(l)]);
+  return (n === 1 || n === 2 || n === 3) ? n : 0;
+}
+
+function setRating(l, value) {
+  const map = loadRatings();
+  const key = listingKey(l);
+  if (!key) return;
+  const n = Number(value);
+  if (n === 1 || n === 2 || n === 3) map[key] = n;
+  else delete map[key];
+  saveRatings(map);
+}
+
+function buildStars(l) {
+  const wrap = document.createElement('div');
+  wrap.className = 'stars';
+  wrap.setAttribute('role', 'radiogroup');
+  wrap.setAttribute('aria-label', 'Note sur 3 étoiles');
+  const current = getRating(l);
+  for (let n = 1; n <= 3; n++) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'star' + (n <= current ? ' is-on' : '');
+    btn.setAttribute('aria-label', n === 1 ? '1 étoile' : n + ' étoiles');
+    btn.setAttribute('aria-checked', n === current ? 'true' : 'false');
+    btn.dataset.value = String(n);
+    btn.textContent = n <= current ? '★' : '☆';
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const next = getRating(l) === n ? 0 : n; // clic sur la même étoile = enlever
+      setRating(l, next);
+      render();
+    });
+    wrap.appendChild(btn);
+  }
+  return wrap;
+}
+
+
 // DOM elements
 const els = {
   count: document.getElementById('listingCount'),
@@ -73,7 +135,7 @@ const state = {
   allListings: /** @type {Listing[]} */([]),
   neighborhoodActive: new Set(),
   sourceActive: new Set(['kijiji', 'marketplace']),
-  sort: 'price-desc',
+  sort: 'stars-desc',
   sqftFilter: 'all', // 'all' | '800' | '1000'
   map: {
     map: null,
@@ -251,14 +313,31 @@ function filterAndSort(listings) {
     filtered = filtered.filter((l) => typeof l.sqft === 'number' && l.sqft >= 1000);
   }
 
-  // Sort
+  // Sort: default is stars (3 on top, unrated at the bottom), then price
   const sort = state.sort;
-  if (sort === 'price-asc' || sort === 'price-desc') {
+  const starThenPrice = (a, b) => {
+    const ds = getRating(b) - getRating(a);
+    if (ds) return ds;
+    return (b.price || 0) - (a.price || 0);
+  };
+  if (sort === 'stars-desc' || !sort) {
+    filtered.sort(starThenPrice);
+  } else if (sort === 'price-asc' || sort === 'price-desc') {
     const dir = sort === 'price-asc' ? 1 : -1;
-    filtered.sort((a, b) => (a.price - b.price) * dir);
+    filtered.sort((a, b) => {
+      const dp = ((a.price || 0) - (b.price || 0)) * dir;
+      if (dp) return dp;
+      return getRating(b) - getRating(a);
+    });
   } else if (sort === 'neighborhood-asc' || sort === 'neighborhood-desc') {
     const dir = sort === 'neighborhood-asc' ? 1 : -1;
-    filtered.sort((a, b) => a.neighborhood.localeCompare(b.neighborhood, 'fr-CA') * dir);
+    filtered.sort((a, b) => {
+      const dn = (a.neighborhood || '').localeCompare(b.neighborhood || '', 'fr-CA') * dir;
+      if (dn) return dn;
+      return starThenPrice(a, b);
+    });
+  } else {
+    filtered.sort(starThenPrice);
   }
   return filtered;
 }
@@ -351,9 +430,13 @@ function renderCard(l) {
   const body = document.createElement('div');
   body.className = 'card-body';
 
+  const priceRow = document.createElement('div');
+  priceRow.className = 'price-row';
   const price = document.createElement('div');
   price.className = 'price';
   price.textContent = formatPrice(l.price);
+  priceRow.appendChild(price);
+  priceRow.appendChild(buildStars(l));
 
   const meta = document.createElement('div');
   meta.className = 'meta';
@@ -406,7 +489,7 @@ function renderCard(l) {
   meta.appendChild(line1);
   meta.appendChild(line2);
 
-  body.appendChild(price);
+  body.appendChild(priceRow);
   body.appendChild(meta);
   body.appendChild(desc);
   body.appendChild(actions);
