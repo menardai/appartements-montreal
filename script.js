@@ -32,6 +32,22 @@ const PLACEHOLDER_DATA_URL =
   <text x="800" y="520" text-anchor="middle" font-family="Outfit, Arial, sans-serif" font-size="44" fill="#7a3a21" opacity="0.55">Photo indisponible</text>
 </svg>`);
 
+// Map defaults and neighborhood centroids (fallbacks)
+const MONTREAL_CENTER = [45.5089, -73.5617];
+const DEFAULT_ZOOM = 12;
+const NEIGHBORHOOD_CENTROIDS = {
+  'Plateau Mont-Royal': [45.5235, -73.5848],
+  'Rosemont': [45.556, -73.57],
+  'Petite-Patrie': [45.545, -73.61],
+  'Verdun': [45.458, -73.571],
+  'Ahuntsic': [45.549, -73.663],
+  'Centre-ville (Ville-Marie)': [45.504, -73.568],
+  'Mile End': [45.524, -73.593],
+  'Saint-Henri': [45.479, -73.586],
+  'Griffintown': [45.492, -73.566]
+};
+const GEOCODE_MIN_INTERVAL_MS = 1100; // be polite to Nominatim
+
 // DOM elements
 const els = {
   count: document.getElementById('listingCount'),
@@ -57,6 +73,13 @@ const state = {
   neighborhoodActive: new Set(),
   sourceActive: new Set(['kijiji', 'marketplace']),
   sort: 'price-asc',
+  map: {
+    map: null,
+    layer: null,
+    markersById: new Map(),
+    nextGeocodeAllowedAt: Date.now(),
+    cache: loadGeoCache()
+  },
   modal: {
     currentIndex: 0,
     photos: /** @type {string[]} */([]),
@@ -80,7 +103,15 @@ const state = {
  *  description: string,
  *  url: string,
  *  photos: string[],
- *  posted: string
+ *  posted: string,
+ *  lat?: number,
+ *  lng?: number,
+ *  appliances?: {
+ *    stove?: boolean,
+ *    fridge?: boolean,
+ *    washer?: boolean,
+ *    dryer?: boolean
+ *  }
  * }} Listing */
 
 init().catch(console.error);
@@ -88,6 +119,7 @@ init().catch(console.error);
 async function init() {
   renderPrimaryChips();
   wireControls();
+  initMap();
   await loadListings();
   render();
   updateLastUpdated();
@@ -195,7 +227,9 @@ async function loadListings() {
 
 function filterAndSort(listings) {
   // Filter by sources
-  let filtered = listings.filter((l) => state.sourceActive.has((l.source || '').toLowerCase()));
+  let filtered = listings
+    .filter((l) => !!(l && l.url)) // require URL, hide listings without link
+    .filter((l) => state.sourceActive.has((l.source || '').toLowerCase()));
 
   // Filter by neighborhoods if any active; if none active -> show all
   if (state.neighborhoodActive.size > 0) {
@@ -231,6 +265,8 @@ function render() {
   if (filtered.length === 0) {
     els.empty.hidden = false;
     els.groups.innerHTML = '';
+    // Update map to empty state (no pins)
+    updateMapMarkers([]);
     return;
   } else {
     els.empty.hidden = true;
@@ -266,18 +302,25 @@ function render() {
   }
   els.groups.innerHTML = '';
   els.groups.appendChild(frag);
+  // Sync map markers with current filtered list
+  updateMapMarkers(filtered);
 }
 
 function renderCard(l) {
   const card = document.createElement('article');
   card.className = 'card';
+  card.dataset.id = l.id || '';
   card.tabIndex = 0;
   card.setAttribute('role', 'button');
   card.setAttribute('aria-label', `Voir détails pour ${l.title || 'annonce'}`);
-  card.addEventListener('click', () => openModal(l));
+  card.addEventListener('click', () => {
+    focusListingOnMap(l);
+    openModal(l);
+  });
   card.addEventListener('keypress', (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
+      focusListingOnMap(l);
       openModal(l);
     }
   });
@@ -320,6 +363,7 @@ function renderCard(l) {
     ${l.bright ? `<span class="badge" title="Lumineux confirmé">Lumineux</span>` : ''}
     ${l.basement ? `<span class="badge" title="Sous-sol">Sous-sol</span>` : ''}
     <span class="badge">${sourceLabel(l.source)}</span>
+    ${buildApplianceBadges(l.appliances)}
   `;
 
   const desc = document.createElement('p');
@@ -334,6 +378,7 @@ function renderCard(l) {
   btnView.textContent = 'Voir les détails';
   btnView.addEventListener('click', (e) => {
     e.stopPropagation();
+    focusListingOnMap(l);
     openModal(l);
   });
   const btnAd = document.createElement('a');
@@ -368,6 +413,17 @@ function openModal(l) {
     l.basement ? 'Sous-sol' : null,
     sourceLabel(l.source)
   ].filter(Boolean).join(' · ');
+  if (l.appliances) {
+    const badges = [
+      l.appliances.stove ? 'Cuisinière' : null,
+      l.appliances.fridge ? 'Frigo' : null,
+      l.appliances.washer ? 'Laveuse' : null,
+      l.appliances.dryer ? 'Sécheuse' : null
+    ].filter(Boolean);
+    if (badges.length) {
+      els.modalMeta.textContent += ' · ' + badges.join(', ');
+    }
+  }
   els.modalDesc.textContent = (l.description || '').trim() || (l.high_end_notes || '').trim() || '';
   els.modalLink.href = l.url || '#';
 
@@ -470,6 +526,15 @@ function sourceLabel(src) {
   if (s.includes('marketplace') || s.includes('facebook')) return 'Marketplace';
   return src || 'Source';
 }
+function buildApplianceBadges(ap) {
+  if (!ap) return '';
+  const items = [];
+  if (ap.stove) items.push('<span class="badge appliance" title="Cuisinière">Cuisinière</span>');
+  if (ap.fridge) items.push('<span class="badge appliance" title="Frigo">Frigo</span>');
+  if (ap.washer) items.push('<span class="badge appliance" title="Laveuse">Laveuse</span>');
+  if (ap.dryer) items.push('<span class="badge appliance" title="Sécheuse">Sécheuse</span>');
+  return items.join(' ');
+}
 function truncate(str, max) {
   if (!str) return '';
   return str.length > max ? str.slice(0, max - 1).trimEnd() + '…' : str;
@@ -524,3 +589,165 @@ function trapFocus(container) {
   };
 }
 
+// Map & geocoding
+function initMap() {
+  const target = document.getElementById('map');
+  if (!target || typeof L === 'undefined') return;
+  const map = L.map(target, {
+    scrollWheelZoom: true,
+    tap: true
+  }).setView(MONTREAL_CENTER, DEFAULT_ZOOM);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 19
+  }).addTo(map);
+  const layer = L.layerGroup().addTo(map);
+  state.map.map = map;
+  state.map.layer = layer;
+}
+
+async function updateMapMarkers(listings) {
+  if (!state.map.map || !state.map.layer) return;
+  state.map.layer.clearLayers();
+  state.map.markersById.clear();
+
+  if (!Array.isArray(listings) || listings.length === 0) {
+    state.map.map.setView(MONTREAL_CENTER, DEFAULT_ZOOM);
+    return;
+  }
+
+  const bounds = L.latLngBounds([]);
+  for (const l of listings) {
+    const ll = await ensureCoordinates(l);
+    if (!ll) continue;
+    const price = formatPriceShort(l.price);
+    const icon = L.divIcon({
+      className: 'price-marker',
+      html: `<span class="pm-price">${price}</span>`,
+      iconSize: [0, 0],
+      iconAnchor: [20, 20]
+    });
+    const marker = L.marker(ll, { icon }).addTo(state.map.layer);
+    state.map.markersById.set(l.id, marker);
+    const thumb = (Array.isArray(l.photos) && l.photos[0]) ? l.photos[0] : PLACEHOLDER_DATA_URL;
+    const popupHtml = `
+      <div style="display:flex;gap:8px;align-items:center;min-width:220px">
+        <img src="${thumb}" alt="Miniature" style="width:64px;height:64px;object-fit:cover;border-radius:8px;background:#ddd" onerror="this.src='${PLACEHOLDER_DATA_URL}'">
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <strong>${escapeHtml(price)}</strong>
+          <span style="color:#6b6258">${escapeHtml(l.neighborhood || '')}</span>
+          <a href="${l.url}" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;color:#7a3a21">Voir l'annonce</a>
+        </div>
+      </div>
+    `;
+    marker.bindPopup(popupHtml);
+    marker.on('click', () => setHighlightedCard(l.id));
+    marker.on('popupopen', () => setHighlightedCard(l.id));
+    bounds.extend(ll);
+  }
+  try {
+    state.map.map.fitBounds(bounds.pad(0.2), { animate: true, maxZoom: 16 });
+  } catch {}
+}
+
+function setHighlightedCard(id) {
+  document.querySelectorAll('.card.is-highlighted').forEach((el) => el.classList.remove('is-highlighted'));
+  const el = document.querySelector(`.card[data-id="${CSS.escape(id)}"]`);
+  if (el) {
+    el.classList.add('is-highlighted');
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
+
+function focusListingOnMap(l) {
+  const marker = state.map.markersById.get(l.id);
+  if (marker && state.map.map) {
+    state.map.map.setView(marker.getLatLng(), Math.max(state.map.map.getZoom(), 15), { animate: true });
+    marker.openPopup();
+    setHighlightedCard(l.id);
+  }
+}
+
+function loadGeoCache() {
+  try {
+    const raw = localStorage.getItem('geo-cache-v1');
+    if (!raw) return {};
+    return JSON.parse(raw) || {};
+  } catch {
+    return {};
+  }
+}
+function saveGeoCache(cache) {
+  try {
+    localStorage.setItem('geo-cache-v1', JSON.stringify(cache));
+  } catch {}
+}
+
+async function ensureCoordinates(l) {
+  if (isFiniteNum(l.lat) && isFiniteNum(l.lng)) {
+    return L.latLng(l.lat, l.lng);
+  }
+  const query = buildGeocodeQuery(l);
+  if (!query) {
+    const c = centroidForNeighborhood(l.neighborhood);
+    return c ? L.latLng(c[0], c[1]) : L.latLng(MONTREAL_CENTER[0], MONTREAL_CENTER[1]);
+  }
+  const cached = state.map.cache[query];
+  if (cached && isFiniteNum(cached.lat) && isFiniteNum(cached.lng)) {
+    return L.latLng(cached.lat, cached.lng);
+  }
+  const res = await geocodeWithRateLimit(query);
+  if (res) {
+    state.map.cache[query] = { lat: res[0], lng: res[1], t: Date.now() };
+    saveGeoCache(state.map.cache);
+    return L.latLng(res[0], res[1]);
+  }
+  const c = centroidForNeighborhood(l.neighborhood);
+  if (c) return L.latLng(c[0], c[1]);
+  return L.latLng(MONTREAL_CENTER[0], MONTREAL_CENTER[1]);
+}
+
+function centroidForNeighborhood(name) {
+  if (!name) return null;
+  return NEIGHBORHOOD_CENTROIDS[name] || null;
+}
+function buildGeocodeQuery(l) {
+  const parts = [];
+  if (l.address) parts.push(l.address);
+  if (l.neighborhood) parts.push(l.neighborhood);
+  parts.push('Montréal, QC');
+  return parts.join(', ').trim();
+}
+async function geocodeWithRateLimit(query) {
+  const now = Date.now();
+  const wait = Math.max(0, state.map.nextGeocodeAllowedAt - now);
+  state.map.nextGeocodeAllowedAt = now + wait + GEOCODE_MIN_INTERVAL_MS;
+  if (wait) await delay(wait);
+  try {
+    const url = `https://nominatim.openstreetmap.org/search?format=jsonv2&q=${encodeURIComponent(query)}&limit=1&addressdetails=0&accept-language=fr-CA`;
+    const resp = await fetch(url, { headers: { 'Accept-Language': 'fr-CA' } });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const json = await resp.json();
+    if (Array.isArray(json) && json[0] && json[0].lat && json[0].lon) {
+      return [parseFloat(json[0].lat), parseFloat(json[0].lon)];
+    }
+    return null;
+  } catch (e) {
+    console.warn('Geocoding failed for', query, e);
+    return null;
+  }
+}
+function delay(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+function isFiniteNum(x) {
+  return typeof x === 'number' && Number.isFinite(x);
+}
+function formatPriceShort(n) {
+  if (typeof n !== 'number' || !Number.isFinite(n)) return '—';
+  try {
+    return new Intl.NumberFormat('fr-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(n);
+  } catch {
+    return `${Math.round(n)} $`;
+  }
+}

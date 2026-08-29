@@ -159,6 +159,36 @@ main.container {
   padding: 1.4rem 0 2.2rem;
 }
 
+/* Layout with map */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 980px) {
+  .content-grid {
+    grid-template-columns: 420px 1fr;
+    align-items: start;
+  }
+}
+.map-panel {
+  position: sticky;
+  top: 66px; /* below sticky controls */
+  align-self: start;
+}
+.map {
+  height: clamp(260px, 68vh, 720px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.map-help {
+  margin: 0.45rem 0 0.2rem;
+  color: var(--subtle-ink);
+  font-size: 0.9rem;
+}
+
 .empty {
   background: var(--paper);
   border: 1px dashed var(--border);
@@ -247,6 +277,10 @@ main.container {
   border: 1px solid color-mix(in oklab, var(--accent) 25%, var(--border));
   border-radius: 999px;
 }
+.badge.appliance {
+  background: color-mix(in oklab, #3b7 14%, white);
+  border-color: color-mix(in oklab, #3b7 35%, var(--border));
+}
 .desc {
   margin: 0.6rem 0 0;
 }
@@ -278,6 +312,11 @@ main.container {
 .btn:focus-visible {
   outline: 3px solid color-mix(in oklab, var(--accent) 40%, white);
   outline-offset: 2px;
+}
+
+.card.is-highlighted {
+  border-color: color-mix(in oklab, var(--accent) 50%, var(--border));
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 20%, transparent), var(--shadow);
 }
 
 .site-footer {
@@ -389,6 +428,27 @@ code {
   border: 1px solid var(--border);
   padding: 0 0.25rem;
   border-radius: 6px;
+}
+
+/* Price marker (Leaflet divIcon) */
+.price-marker {
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-weight: 700;
+  font-family: 'Outfit', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  white-space: nowrap;
+}
+.price-marker .pm-neigh {
+  color: var(--subtle-ink);
+  font-weight: 500;
+  margin-left: 6px;
+  display: none; /* show only in popup, not in marker label */
 }
 
 /* Reduce motion for users who prefer it */
