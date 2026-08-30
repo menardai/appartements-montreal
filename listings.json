@@ -1,5 +1,53 @@
 [
   {
+    "id": "kijiji-1701307643",
+    "source": "kijiji",
+    "title": "4.5 Condo Appartement à louer-GRIFFINTOWN-tout inclus-WillRich",
+    "price": 2480,
+    "neighborhood": "Griffintown",
+    "address": "1705 rue William, Montreal, QC, H3J 1R3",
+    "lat": 45.4883,
+    "lng": -73.56643,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": null,
+    "bright": true,
+    "basement": false,
+    "floor": null,
+    "high_end_notes": "Will & Rich Griffintown: quartz counters, large windows, balcony/Juliette, rooftop pool & gym; utilities included. Photos may be representative.",
+    "blurb_fr": "Griffintown (Will & Rich) : 4½ avec 5 électros, grandes fenêtres et balcon. Tout inclus, piscine et gym sur le toit.",
+    "description": "logement locatif apartment for rent, 2cc 4 1/2, 2 bedrooms/chambres, Sud-Ouest, Canal Lachine-Centre-Ville Montréal/Downtown-Marché Atwater-métro Lionel-Groulx, George Vanier-rue Notre-Dame Les appartements Will & Rich sont situés à l'intersection de William et Richmond dans le quartier branché de Griffintown. Les Studios et appartements de 1, 2 et 3 chambres offrent: 5 électroménagers (frigo, poêle, laveuse/sécheus…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-5-condo-appartement-a-louer-griffintown-tout-inclus-willrich/1701307643",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/ac/acf59ec5-8ddd-4218-86e3-a47b91e04445?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/9a/9a122740-f2d1-408e-a228-885047ee3553?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/c9/c95b9ba3-5c6e-4cd9-b91c-481a0ebc3fa8?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/eb/eb86a274-789e-4224-b7eb-e985c27bbf0c?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/df/df3e0828-2def-4ea7-8280-d4093f020dfa?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/89/890cf98e-33ce-434d-a51c-d13e23bd6bda?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/8c/8c539013-83aa-4b96-b8b5-1233369e6f6b?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/e1/e183f064-e4d2-4bce-a1df-fcc336e947d4?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/3b/3b94d491-78fc-4fa9-9550-dade55031905?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/31/31dffff7-b8b6-4c79-8a56-402298988de7?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/7d/7d5e1bcd-0efc-4688-ad63-d40a4f964eca?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/c4/c40038a2-7a85-438c-9786-5f6e181a3828?rule=kijijica-640-webp"
+    ],
+    "posted": "2024-08-30",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "5 électros: frigo, poêle, laveuse/sécheuse, lave-vaisselle. Chauffage, électricité, eau chaude, clim inclus."
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/ac/acf59ec5-8ddd-4218-86e3-a47b91e04445?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/9a/9a122740-f2d1-408e-a228-885047ee3553?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/c9/c95b9ba3-5c6e-4cd9-b91c-481a0ebc3fa8?rule=kijijica-640-webp"
+    ],
+    "available": null
+  },
+  {
     "id": "kijiji-1742035223",
     "source": "kijiji",
     "title": "4.5 2sdb Appartement neuf à louer Plateau-Mont-Royal-Bloc Rivard",
@@ -36,6 +84,51 @@
       "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/20/203cb3b5-5491-4c4e-b020-ba34fe0676a1?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/7c/7cc27885-da8e-4219-99ab-ca7c6dfef0b1?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/cc/cc594e32-de0c-41e7-821c-8f493a679abb?rule=kijijica-640-webp"
+    ],
+    "available": null
+  },
+  {
+    "id": "kijiji-1738496131",
+    "source": "kijiji",
+    "title": "Downtown Montreal | 4.5 Condo | Pool, Gym & 24/7 Security",
+    "price": 2450,
+    "neighborhood": "Ville-Marie",
+    "address": "Rue de la Montagne, Montréal, QC H3G 0C7",
+    "lat": 45.5,
+    "lng": -73.57,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": null,
+    "bright": true,
+    "basement": false,
+    "floor": null,
+    "high_end_notes": "Downtown 4½ near Lucien-L’Allier/Peel/Concordia: bright 2-bed, gym, sauna, pool, tennis. Pets not allowed; utilities extra.",
+    "blurb_fr": "Centre-ville : 4½ lumineux avec tous les électros. Gym, piscine et sauna, à pied des métros Peel et Lucien-L’Allier.",
+    "description": "Bright and well-maintained 2-bedroom, 1-bath condo located in the heart of downtown Montreal. Available in August, 2026 for $2,450/month. Included appliances: fridge, stove, oven, microwave, dishwasher, washer, and dryer. Building facilities: gym, sauna, swimming pool, tennis court, study room, and conference room ***Pets are not allowed. Utilities and parking are not included. Conveniently located within walking di…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/downtown-montreal-4-5-condo-pool-gym-&-24-7-security/1738496131",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/7a/7a3ba9e6-361e-4b82-b3b0-03c22a4ab498?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/56/56587f64-7e7c-45e3-9b14-4d7549e2be6e?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/cb/cb7dc24b-20d2-4408-9347-250b621d2582?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/63/637bc3f7-4225-4428-9192-3d4351dd78f2?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ad/ad2a94fd-c516-40ea-b2bd-1af0ac70e415?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/16/16673ce2-c0ac-4756-87a5-9dc84f164441?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/7f/7f988986-f7a3-47be-8ebf-7838d6e1ee7a?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/cf/cf4a3a30-bcf8-46b8-84fa-64030eef0567?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/32/32c7c085-64b1-40be-ba4d-07d45884550b?rule=kijijica-640-webp"
+    ],
+    "posted": "2026-06-01",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "Fridge, stove, oven, microwave, dishwasher, washer, and dryer."
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/7a/7a3ba9e6-361e-4b82-b3b0-03c22a4ab498?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/56/56587f64-7e7c-45e3-9b14-4d7549e2be6e?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/cb/cb7dc24b-20d2-4408-9347-250b621d2582?rule=kijijica-640-webp"
     ],
     "available": null
   },
@@ -81,6 +174,99 @@
     "available": "1er septembre 2026"
   },
   {
+    "id": "marketplace-2248483215917535",
+    "source": "marketplace",
+    "title": "Beautiful renovated 4½ apartment for rent – Plateau (cession de bail)",
+    "price": 2450,
+    "neighborhood": "Plateau Mont-Royal",
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 1000,
+    "bright": true,
+    "basement": false,
+    "floor": "rez-de-chaussée",
+    "high_end_notes": "Rénové récemment, planchers chauffants, salle de bain spacieuse avec double évier, réfrigérateur intelligent à écran tactile, micro-ondes neuf, climatisation murale/centrale, laveuse-sécheuse dans l'unité, lave-vaisselle, penderie, local à vélos.",
+    "blurb_fr": "Superbe 4½ rénové de 1 000 pi² au cœur du Plateau : planchers chauffants, climatisation, laveuse-sécheuse et lave-vaisselle dans l'unité, grande salle de bain à double évier. Deux chambres fermées avec garde-robes, parfait pour deux professionnels. Cession de bail au 1er novembre 2026.",
+    "description": "BEAUTIFUL RENOVATED 4½ APARTMENT FOR RENT – PLATEAU. Cession de bail 1er novembre 2026. Loyer de base 2 450 $/mois; le locataire paie électricité et Internet et doit souscrire une assurance locataire. Appartement de 1 000 pi² récemment rénové, 2 chambres, 1 salle de bain, situé au rez-de-chaussée. Planchers chauffants. Salle de bain spacieuse avec double évier. Électroménagers améliorés : micro-ondes neuf, réfrigérateur intelligent à écran tactile, climatiseur mural, laveuse/sécheuse. Local à vélos au sous-sol de l'immeuble. Espace polyvalent : une grande chambre principale et une chambre secondaire, toutes deux avec garde-robes. Fiche Marketplace : appartement, 2 chambres · 1 salle de bain, climatisation centrale, chauffage disponible, buanderie dans le logement, bail de 1 an, lave-vaisselle, pièce-penderie, micro-ondes, four.",
+    "url": "https://www.facebook.com/marketplace/item/2248483215917535/",
+    "photos": [
+      "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/763847930_10233265103624943_6056012555281420533_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/763112003_10233265041463389_1572497027984909936_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/764881333_10233265040743371_4223565396577976752_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/762737887_10233265042743421_4457379552516842819_n.jpg",
+      "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.30808-6/762779914_10233265041823398_4269776780972474757_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/762551800_10233265040783372_34441497372978604_n.jpg",
+      "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.30808-6/762667170_10233265042023403_8854916354140538622_n.jpg",
+      "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.30808-6/762629795_10233265041983402_2808330017164478429_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/762324746_10233265051623643_7520579378860128232_n.jpg"
+    ],
+    "posted": null,
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "Four et micro-ondes listés par Marketplace, réfrigérateur intelligent, laveuse/sécheuse dans l'unité, lave-vaisselle."
+    },
+    "photos_featured": [
+      "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/763847930_10233265103624943_6056012555281420533_n.jpg",
+      "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/763112003_10233265041463389_1572497027984909936_n.jpg",
+      "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/764881333_10233265040743371_4223565396577976752_n.jpg"
+    ],
+    "available": "2026-11-01"
+  },
+  {
+    "id": "kijiji-1690471115",
+    "source": "kijiji",
+    "title": "4.5 condo appt tout inclus a louer Sud Ouest-Griffin Square",
+    "price": 2425,
+    "neighborhood": "Griffintown",
+    "address": "235 rue Young, Montreal, QC, H3C 0Z6",
+    "lat": 45.49349,
+    "lng": -73.55926,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": null,
+    "bright": true,
+    "basement": false,
+    "floor": null,
+    "high_end_notes": "Griffin Square: high-end finishes, quartz, balcony/terrace, outdoor pool, rooftop lounge, coworking; utilities included.",
+    "blurb_fr": "Griffin Square : 4½ lumineux tout inclus avec 5 électros et balcon. Quartz, piscine et gym, près du métro Bonaventure.",
+    "description": "Appartement a louer-logement locatif-apartment for rent-condo rental-4.5 2cc 4 1/2 2 bedrooms/chambres-Griffintown-Southwest-Sud oust-centre ville downtown-old port vieux montreal-cite multimedia-all included tout inclus-ETS PROMOTION - Certaines conditions s'appliquent. Pour une durée limitée seulement. PROMOTION - Certain conditions apply. For a limited time only. GRIFFIN SQUARE: VIVEZ LE NOUVEL ANGLE DE GRIFFINTO…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-5-condo-appt-tout-inclus-a-louer-sud-ouest-griffin-square/1690471115",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/35/35185986-229a-4987-a0b9-0dcf4dab3d63?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/3e/3e3798a9-ffe6-4571-8e0e-71e356bb0954?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/e8/e80b246c-e893-4066-a180-92fb549a1487?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/1c/1cdb769b-cc40-4f19-a9f7-34d4e31f9582?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/ec/ec5ce580-3d49-41ad-9562-a2ee2d393442?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/4e/4e24b298-03af-4763-996c-6f4acd569fd4?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/26/26ae83a2-183e-41e7-baee-d564df1e58a4?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/15/153cbb13-9daf-45f9-bf75-f6cff072f632?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/5f/5fc655e3-a223-4465-8ca1-c4ba15bb50d5?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/d8/d8ce715d-1e31-4c38-aa19-31efea112fa2?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/70/70df3f7c-7982-4db2-b979-8f4538f10ce8?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/cb/cb33f02b-14eb-49a6-b814-e05f8cddfd17?rule=kijijica-640-webp"
+    ],
+    "posted": "2024-04-09",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "5 électros (frigo, poêle, lave-vaisselle, laveuse/sécheuse); électricité, chauffage, eau chaude, clim inclus."
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/35/35185986-229a-4987-a0b9-0dcf4dab3d63?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/3e/3e3798a9-ffe6-4571-8e0e-71e356bb0954?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/e8/e80b246c-e893-4066-a180-92fb549a1487?rule=kijijica-640-webp"
+    ],
+    "available": null
+  },
+  {
     "id": "kijiji-1741658822",
     "source": "kijiji",
     "title": "Condo 2 chambres, 1 salle de bains, 1 bureau - VERDUN",
@@ -122,6 +308,52 @@
     "available": "1er septembre 2026"
   },
   {
+    "id": "kijiji-1742560074",
+    "source": "kijiji",
+    "title": "Bright 2 room 2 bathroom apartment",
+    "price": 2378,
+    "neighborhood": "Griffintown",
+    "address": "1251 Rue Ottawa, Montréal, QC H3C 0Z8",
+    "lat": 45.49195,
+    "lng": -73.56123,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqft": null,
+    "bright": true,
+    "basement": false,
+    "floor": null,
+    "high_end_notes": "1251 Rue Ottawa, Griffintown: 2 bedrooms + 2 baths, large windows, balcony, kitchen island, gym, locker; near Lachine Canal.",
+    "blurb_fr": "Griffintown : 4½ lumineux, 2 chambres et 2 salles de bain, tous les électros. Grandes fenêtres, balcon et gym, près du canal.",
+    "description": "APARTMENT FEATURES * 2 spacious bedrooms * 2 full bathrooms * Spacious closets * Private balcony * Large windows with excellent natural light * Air conditioning * Modern kitchen with island * Oven, stove, and range hood included * Refrigerator included * Dishwasher included * In-unit washer and dryer * Private storage locker included * Gym in the building * Elevator * Pet-friendly * Secure building with intercom and…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/bright-2-room-2-bathroom-apartment/1742560074",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/f2/f2e29a60-6e07-4b80-b091-291cb5acc2e0?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/a1/a1a3e48d-bb83-4d06-8c7c-78ce8facbb82?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/71/71bf68a0-1ca8-4009-91da-71488bc9de86?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/aa/aa92e016-8dc2-4804-b60b-9321129dd1a2?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/d1/d1ac19b3-5021-4afe-a9c4-1f64511272d7?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/81/8146a196-0b4b-4768-835b-20ada48bda95?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c0/c0a84b59-8c04-43a8-b994-a3a2427ef8ca?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/5c/5c3df4ed-0888-4926-982e-5ec6c009bf37?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/87/87833499-4176-461a-a8c6-8ce172af2cc3?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/47/4711bbb3-a616-4ea3-be69-ff1866facda3?rule=kijijica-640-webp"
+    ],
+    "posted": "2026-08-26",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "Oven, stove, fridge, dishwasher, in-unit washer and dryer."
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/f2/f2e29a60-6e07-4b80-b091-291cb5acc2e0?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/a1/a1a3e48d-bb83-4d06-8c7c-78ce8facbb82?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/71/71bf68a0-1ca8-4009-91da-71488bc9de86?rule=kijijica-640-webp"
+    ],
+    "available": "2026-11-01"
+  },
+  {
     "id": "kijiji-1742677129",
     "source": "kijiji",
     "title": "Condo 4 1/2 à louer au cœur du Plateau Mont-Royal",
@@ -158,6 +390,102 @@
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/bd/bd0c1bd0-545f-4684-9a75-fe3b1ea8c168?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/54/5410817e-3010-4844-95fb-ea3676d2b67a?rule=kijijica-640-webp",
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/a9/a98370d4-8b3f-4270-89cc-eadfedf0f533?rule=kijijica-640-webp"
+    ],
+    "available": null
+  },
+  {
+    "id": "kijiji-1733298819",
+    "source": "kijiji",
+    "title": "4.5 condo appartement a louer Griffintown-Sherwin",
+    "price": 2320,
+    "neighborhood": "Griffintown",
+    "address": "1957 rue Hunter, Montreal, QC, H3J 2N9",
+    "lat": 45.48648,
+    "lng": -73.56873,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": null,
+    "bright": true,
+    "basement": false,
+    "floor": null,
+    "high_end_notes": "SHERWIN rental condos: brand-new appliances, quartz kitchens, private balcony, rooftop pool & gym; bright spaces near Lachine Canal.",
+    "blurb_fr": "Sherwin à Griffintown : 4½ neuf avec 5 électros et espaces lumineux. Balcon, piscine et gym sur le toit.",
+    "description": "Apartment for rent appt logement locatif, 4.5, 4 1/2 2cc, 2 bedrooms/chambres, Canal Lachine-Marché Atwater-Sud-Ouest, métro Lionel-Groulx-Georges Vanier, Centre-Ville Montréal/Downtown, rue Notre-Dame SHERWIN Condos Locatifs 1957 rue Hunter-Griffintown Bienvenue dans votre nouveau chez-vous dynamique - les condos locatifs SHERWIN offrent une approche de la vie urbaine fraîche et colorée. Studios, condo appartements…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-5-condo-appartement-a-louer-griffintown-sherwin/1733298819",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/7f/7f3ec0eb-9b6a-4990-80a6-f29cf7ceeff2?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/a8/a80ca39e-a02a-4783-b710-58e86e4d649d?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/97/97c58c37-0890-4e68-98e4-403341d8f780?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/95/9566ed65-92bd-4ef1-9793-9ea7d8cb1271?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/30/30719608-ee03-4ab3-bf47-1ad70cf6c894?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/0f/0fd5f6a8-e571-4073-8b9c-0f536420583d?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/63/63f2edc5-bc47-4991-90fd-3badcefb16dd?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/5d/5d914d0e-f510-429d-b17c-1537778435ec?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/da/daf73778-8210-4f54-9b18-15b2f7b70867?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/74/7479ab8c-0552-47cc-b953-5ce557f565f3?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/b3/b3218b19-da83-4ed2-a616-b30527b305a1?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/f8/f807e89c-09e2-43c2-a9c3-22970218fb30?rule=kijijica-640-webp"
+    ],
+    "posted": "2026-02-17",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "Électroménagers neufs: frigo, poêle, lave-vaisselle, laveuse, sécheuse. Électricité, chauffage, eau chaude inclus."
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/7f/7f3ec0eb-9b6a-4990-80a6-f29cf7ceeff2?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/a8/a80ca39e-a02a-4783-b710-58e86e4d649d?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/97/97c58c37-0890-4e68-98e4-403341d8f780?rule=kijijica-640-webp"
+    ],
+    "available": null
+  },
+  {
+    "id": "kijiji-1741610229",
+    "source": "kijiji",
+    "title": "4.5 Apartment/Condo à louer/for rent-Plateau Mont-Royal-468sg",
+    "price": 2300,
+    "neighborhood": "Plateau Mont-Royal",
+    "address": "468 rue Saint-Grégoire, Montreal, QC, H2J 0B6",
+    "lat": 45.52932,
+    "lng": -73.59235,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": null,
+    "bright": true,
+    "basement": false,
+    "floor": null,
+    "high_end_notes": "Brand-new 468sg on rue Saint-Grégoire: quartz kitchens, concrete ceilings, rooftop terrace; near Parc Laurier and metros Laurier/Rosemont/Mont-Royal.",
+    "blurb_fr": "Neuf sur le Plateau (468sg) : 4½ avec électros inox, quartz et clim. Terrasse sur le toit, près du parc Laurier.",
+    "description": "Apartment/Appartement, Studio, 3.5, 3 1/2, 4.5, 4 1/2, 5.5, 5 1/2, Brand-new, tout neuf, luxe, Plateau-Mont-Royal, Mile-End, Montreal, métros Laurier, Rosemont et Mont-Royal, Parc Laurier, St-Denis, Parc Lafontaine, Terrasse sur le toit 468 rue Saint-Grégoire 468sg est un nouveau projet de location situé au coeur du Plateau-Mont-Royal à Montréal. Saisissez l'opportunité d'habiter à quelques pas du Parc Laurier et le…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/4-5-apartment-condo-a-louer-for-rent-plateau-mont-royal-468sg/1741610229",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/e6/e62af664-5096-46c1-8c90-c0abf3efdc19?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/4a/4aaae354-95de-4725-a25f-286506cb7900?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/e2/e253e74b-0d65-45b8-860d-c49f38f4011a?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/91/91e84b8a-4437-4cef-8a0b-62c86ab3d23a?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/b3/b3167200-4dc4-4e73-b0af-8d1db01e0c53?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/97/971d56ce-c300-4100-bcd8-f3cc217a1639?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/aa/aa67a070-24ca-4549-ada3-805222c4d874?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/ff/ffe9b1e7-9fdb-43cf-a7e0-a08bcc0c31e9?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/e4/e4872243-d9b2-4f74-86b3-903c0344328a?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/8c/8cdc2050-ed1d-4e0c-a954-b779371b1e60?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/36/3661c4fe-9de1-4205-a2ee-86b060606849?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/99/9951ead8-2472-456e-a323-ac8df9ea1ef3?rule=kijijica-640-webp"
+    ],
+    "posted": "2026-08-05",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "Tous les électroménagers en acier inoxydable + laveuse/sécheuse; électricité, clim centrale, chauffage inclus."
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/e6/e62af664-5096-46c1-8c90-c0abf3efdc19?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/4a/4aaae354-95de-4725-a25f-286506cb7900?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/e2/e253e74b-0d65-45b8-860d-c49f38f4011a?rule=kijijica-640-webp"
     ],
     "available": null
   },
@@ -242,6 +570,52 @@
     "available": "1er septembre 2026"
   },
   {
+    "id": "kijiji-1742742110",
+    "source": "kijiji",
+    "title": "2-bedroom apt for rent Plateau",
+    "price": 2275,
+    "neighborhood": "Plateau Mont-Royal",
+    "address": "Montreal, QC H2W 2H5, Canada",
+    "lat": 45.52139,
+    "lng": -73.58379,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 700,
+    "bright": true,
+    "basement": false,
+    "floor": "RDC",
+    "high_end_notes": "Renovated ground-floor 2-bedroom lease take-over to June 2027 near McGill; minisplit A/C; quiet Plateau street.",
+    "blurb_fr": "Cession de bail au Plateau : 2 chambres rénovées au RDC, tous les électros et A/C. Lumineux, près de McGill.",
+    "description": "Lease take-over (Until June 30/2027) Available Oct 1, 2026 (possibly sooner) Beautifully renovated ground-floor 2-bedroom apartment in the heart of the Plateau Located on a quiet residential street in one of Montreal’s most sought-after neighbourhoods, this bright and tastefully renovated apartment combines modern comfort with classic Plateau charm. Close to McGill. Features include: Recently upgraded appliances: re…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/2-bedroom-apt-for-rent-plateau/1742742110",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/2c/2cf90c58-bd2c-4229-9425-6619f5073d43?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/de/dea02135-93df-4e28-b62e-e87595b8a8e7?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/2b/2bed1b53-6a09-4382-bead-35657b2f1c53?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/81/815f5f71-7e5c-4485-8194-764eb6ff266f?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/10/10c9a139-69a9-491b-88ae-c94d0f5a40a5?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/b8/b8214399-631e-4bb4-8445-07513374282b?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/27/27a9ec9e-2210-499f-90fa-a2ff561c6c6d?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/60/605d8aca-c4e0-4fe6-bdff-6a3a522b3c39?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6a/6acba538-99fb-40f7-a3a8-2ee335d168f4?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/d5/d58c8896-38f3-4fba-b9c9-f6512f4d1964?rule=kijijica-640-webp"
+    ],
+    "posted": "2026-08-29",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "Recently upgraded: fridge, stove, dishwasher, microwave, in-suite washer and dryer."
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/2c/2cf90c58-bd2c-4229-9425-6619f5073d43?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/de/dea02135-93df-4e28-b62e-e87595b8a8e7?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/2b/2bed1b53-6a09-4382-bead-35657b2f1c53?rule=kijijica-640-webp"
+    ],
+    "available": "2026-10-01"
+  },
+  {
     "id": "marketplace-27141923258751240",
     "source": "marketplace",
     "title": "4.5 tout inclus au Dominik | Quartier des Spectacles | 1 MOIS GRATUIT",
@@ -320,6 +694,52 @@
       "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/68/680fe47c-98d8-40e5-a517-a3eea9ae259c?rule=kijijica-640-webp"
     ],
     "available": "1er août 2026 (flexible)"
+  },
+  {
+    "id": "kijiji-1742553101",
+    "source": "kijiji",
+    "title": "Le Noyer — Condo haut de gamme 4 1/2 Sud-Ouest Mtl Occ. Rapide",
+    "price": 2250,
+    "neighborhood": "Saint-Henri",
+    "address": "708 rue Walnut, Montréal Sud-Ouest, QC, H4C 3E5",
+    "lat": 45.47292,
+    "lng": -73.59406,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": null,
+    "bright": true,
+    "basement": false,
+    "floor": null,
+    "high_end_notes": "Le Noyer, 708 rue Walnut: 28-unit concrete boutique building, 9-ft ceilings, large windows, private terraces, quartz. Minutes from métro Saint-Henri, REM, Canal and Atwater Market.",
+    "blurb_fr": "Le Noyer (Saint-Henri) : 4½ neuf lumineux, 5 électros et quartz. Grandes fenêtres, terrasse, près du métro Saint-Henri et du canal.",
+    "description": "DÉCOUVREZ LE NOYER --- Condo locatif haut de gamme / Appartement neuf 2 chambres (4 1/2) à louer au 708 rue Walnut, quartier Sud-Ouest de Montréal. Offrez-vous un espace de vie moderne, calme et lumineux au cur du quartier le plus vibrant de Montréal. Le Noyer propose des condos locatifs haut de gamme en béton (1 à 3 chambres) conçus pour les professionnels actifs qui recherchent à la fois tranquillité et proximité …",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/le-noyer-condo-haut-de-gamme-4-1-2-sud-ouest-mtl-occ-rapide/1742553101",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/14/14160f31-60d2-4cf1-b556-10f08a253605?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/b7/b745d442-82fc-4c65-a9e0-283dd2b134af?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/25/25115b67-b4e2-405d-ba04-0733cb51336d?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/45/4590760e-0b04-4749-986d-8ec0915ce920?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/4e/4e9d3259-cd72-40d7-90b6-570361c7bad3?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/9c/9c3d3abf-cae0-4ee9-b0df-71f2c52dad28?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/4f/4fb10222-c6e8-4055-9853-6baffdf118a7?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/9d/9df9a4bc-54e2-46b2-9d92-89e8940d36c8?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/21/21bcafde-b19f-4856-9801-7821093b5d3f?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/07/070ccca5-3b7c-48d7-8d53-6a0e9c71cefe?rule=kijijica-640-webp"
+    ],
+    "posted": "2026-08-25",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "5 électroménagers inclus, comptoirs en quartz."
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/14/14160f31-60d2-4cf1-b556-10f08a253605?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/b7/b745d442-82fc-4c65-a9e0-283dd2b134af?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/25/25115b67-b4e2-405d-ba04-0733cb51336d?rule=kijijica-640-webp"
+    ],
+    "available": null
   },
   {
     "id": "kijiji-1740921142",
@@ -440,6 +860,54 @@
       "https://scontent-dfw5-1.xx.fbcdn.net/v/t45.5328-4/746631534_1399146355414152_5064124463558808571_n.jpg"
     ],
     "available": "1er août 2026"
+  },
+  {
+    "id": "kijiji-1742198597",
+    "source": "kijiji",
+    "title": "Cession de bail - 1er Octobre - 4 1/2 Ville-Marie",
+    "price": 2162,
+    "neighborhood": "Ville-Marie",
+    "address": "Montreal, QC H2Z 1L9",
+    "lat": 45.51,
+    "lng": -73.56,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 850,
+    "bright": true,
+    "basement": false,
+    "floor": "2e étage",
+    "high_end_notes": "Lease transfer downtown near Place-d’Armes: 850 sqft, bright 2nd floor, private balcony, sofa included; heating/hot water extra.",
+    "blurb_fr": "Cession au centre-ville : 4½ lumineux de 850 pi² au 2e, tous les électros et balcon. Près du métro Place-d’Armes.",
+    "description": "FRANÇAIS - English Below Cession de bail – Disponible le 1er octobre ️Magnifique 4 ½ de 850 pi² au cœur du centre-ville de Montréal Spacieux, lumineux et situé au 2e étage d'un immeuble sur une rue tranquille, cet appartement offre le parfait équilibre entre le calme et la proximité de tous les services, restaurants, cafés et attractions du centre-ville. Loyer : 2 162 $/mois L'appartement comprend : • Tous les élect…",
+    "url": "https://www.kijiji.ca/v-apartments-condos/ville-de-montreal/cession-de-bail-1er-octobre-4-1-2-ville-marie/1742198597",
+    "photos": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/86/86d56f84-25fa-4d5d-b252-f27dac00d824?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/07/07430b3d-4af0-4d1a-931e-8562c858495b?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/a9/a970dd57-b53b-424b-9400-03f26ef23ec7?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/54/54ceb2e0-d5b8-49a7-b09d-7fa1cc970707?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/5a/5a70b657-3434-4302-bdfe-1f30a0ea7b66?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/29/29114f12-ca06-40a7-af56-46bf1cedd60c?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ef/ef65b0b6-283e-43a9-878c-e633f15793d5?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/f7/f7376da9-5bc8-4497-a608-c7f962ccaab6?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/9b/9bb797d3-81b8-435f-b212-2c047fdd2e4d?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/59/59568574-acb7-4f94-9a36-c9e70f259bf8?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/64/64acecf6-da63-49ae-89ae-a5b1479776a0?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/3a/3a91d7c7-4476-48b4-bb77-8d79f1463ed8?rule=kijijica-640-webp"
+    ],
+    "posted": "2026-08-18",
+    "appliances": {
+      "stove": true,
+      "fridge": true,
+      "washer": true,
+      "dryer": true,
+      "notes": "Tous les électroménagers inclus (cession de bail)."
+    },
+    "photos_featured": [
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/86/86d56f84-25fa-4d5d-b252-f27dac00d824?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/07/07430b3d-4af0-4d1a-931e-8562c858495b?rule=kijijica-640-webp",
+      "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/a9/a970dd57-b53b-424b-9400-03f26ef23ec7?rule=kijijica-640-webp"
+    ],
+    "available": "2026-10-01"
   },
   {
     "id": "kijiji-1740184389",
